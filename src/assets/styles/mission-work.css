@@ -1,0 +1,406 @@
+/* Sección principal. */
+.mission {
+  --mission-blue: #0a3d78;
+  --mission-navy: #062650;
+  --mission-yellow: #f2c438;
+
+  overflow: clip;
+  width: 100%;
+  padding: clamp(65px, 8vw, 110px) 24px;
+  scroll-margin-top: 30px;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(205, 200, 61, 0.2) 0%,
+      rgba(242, 196, 56, 0) 65%
+    ),
+    linear-gradient(
+      to right,
+      var(--mission-yellow) 0%,
+      var(--mission-yellow) 50%,
+      #ffffff 50%,
+      #ffffff 100%
+    );
+
+  
+}
+
+.mission,
+.mission *,
+.mission *::before,
+.mission *::after {
+  box-sizing: border-box;
+}
+
+/* Fotografías y texto en dos columnas. */
+.mission-container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(40px, 6vw, 90px);
+
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/* Composición de fotografías. */
+.mission-collage {
+  position: relative;
+  min-width: 0;
+  height: clamp(420px, 43vw, 570px);
+}
+
+.mission-photo {
+  position: absolute;
+  overflow: hidden;
+  margin: 0;
+  background: #edf3f8;
+  box-shadow: 0 15px 35px rgba(10, 61, 120, 0.1);
+}
+
+.mission-photo--back {
+  top: 0;
+  right: 0;
+  width: 77%;
+  height: 85%;
+}
+
+.mission-photo--front {
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 57%;
+  height: 68%;
+  border: 10px solid white;
+}
+
+.mission-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.mission-photo figcaption {
+  position: absolute;
+  bottom: 0;
+  inset-inline: 0;
+  padding: 30px 18px 16px;
+
+  background: linear-gradient(
+    transparent,
+    rgba(6, 38, 80, 0.85)
+  );
+
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+/* Fondo provisional cuando falta una fotografía. */
+.mission-placeholder {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+
+  background: linear-gradient(135deg, #e2ebf5, #f8fafc);
+  color: var(--mission-blue);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* Distintivo sobre las fotografías. */
+.mission-badge {
+  position: absolute;
+  right: -12px;
+  bottom: 0;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 130px;
+  min-height: 145px;
+  padding: 18px;
+  border: 8px solid white;
+
+  background: var(--mission-blue);
+  color: white;
+  text-align: center;
+}
+
+.mission-badge svg {
+  width: 46px;
+  height: 46px;
+  color: var(--mission-yellow);
+}
+
+.mission-badge span {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+/* Encabezado y descripción. */
+.mission-copy {
+  min-width: 0;
+  text-align: center;
+}
+
+.mission-eyebrow {
+  color: var(--mission-blue);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.mission-heading h1 {
+  margin: 16px 0;
+  color: var(--mission-navy);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.mission-heading h2 {
+  margin: 18px 0;
+  color: var(--mission-navy);
+  font-size: clamp(2rem, 3.7vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+.mission-heading h2 span {
+  color: var(--mission-blue);
+}
+
+.mission-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 24px;
+}
+
+.mission-divider i {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #c59619;
+}
+
+.mission-divider span {
+  width: 38px;
+  height: 3px;
+  margin-left: 3px;
+  border-radius: 999px;
+  background: var(--mission-yellow);
+}
+
+.mission-description p {
+  margin: 0 0 18px;
+  color: #465366;
+  font-size: clamp(1rem, 1.3vw, 1.1rem);
+  line-height: 1.85;
+  text-align: justify;
+}
+
+.mission-description strong {
+  color: #17375d;
+  font-weight: 700;
+}
+
+.mission-description .mission-message {
+  margin-top: 24px;
+  color: var(--mission-blue);
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Países y comunidades. */
+.mission-places {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mission-places li {
+  padding: 7px 12px;
+  border: 1px solid #e4d6a9;
+  border-radius: 999px;
+  background: #fffdf6;
+  color: var(--mission-blue);
+  font-size: 0.8rem;
+}
+
+/* Estado normal: contenido visible. */
+.mission [data-mission-reveal] {
+  opacity: 1;
+  transform: none;
+
+  transition:
+    opacity 2000ms ease,
+    transform 1400ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Fotografías desde la izquierda. */
+.mission.mission--animated:not(.mission--visible)
+  [data-mission-reveal="left"] {
+  opacity: 0;
+  transform: translateX(-120px);
+}
+
+/* Encabezado desde arriba. */
+.mission.mission--animated:not(.mission--visible)
+  [data-mission-reveal="top"] {
+  opacity: 0;
+  transform: translateY(-65px);
+}
+
+/* Descripción desde abajo. */
+.mission.mission--animated:not(.mission--visible)
+  [data-mission-reveal="bottom"] {
+  opacity: 0;
+  transform: translateY(65px);
+}
+
+/* Posición final al aparecer la sección. */
+.mission.mission--animated.mission--visible
+  [data-mission-reveal] {
+  opacity: 1;
+  transform: none;
+}
+
+/* Entrada escalonada. */
+.mission.mission--visible
+  .mission-photo--front[data-mission-reveal] {
+  transition-delay: 220ms;
+}
+
+.mission.mission--visible
+  .mission-description[data-mission-reveal] {
+  transition-delay: 180ms;
+}
+
+/* Tabletas y celulares. */
+@media (max-width: 900px) {
+  .mission {
+    background:
+      radial-gradient(
+        circle at center,
+        rgba(205, 200, 61, 0.15),
+        transparent 65%
+      ),
+      linear-gradient(
+        to bottom,
+        var(--mission-yellow) 0%,
+        var(--mission-yellow) 40%,
+        #ffffff 65%,
+        #ffffff 100%
+      );
+  }
+
+  .mission-container {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    max-width: 650px;
+  }
+
+  .mission-collage {
+    width: 100%;
+    max-width: 520px;
+    height: 490px;
+    margin-inline: auto;
+  }
+
+  .mission.mission--animated:not(.mission--visible)
+    [data-mission-reveal="left"] {
+    transform: translateX(-45px);
+  }
+
+  .mission.mission--animated:not(.mission--visible)
+    [data-mission-reveal="top"] {
+    transform: translateY(-45px);
+  }
+
+  .mission.mission--animated:not(.mission--visible)
+    [data-mission-reveal="bottom"] {
+    transform: translateY(45px);
+  }
+}
+
+/* Celulares pequeños. */
+@media (max-width: 520px) {
+  .mission {
+    padding: 55px 20px;
+  }
+
+  .mission-collage {
+    height: clamp(320px, 100vw, 440px);
+  }
+
+  .mission-photo--front {
+    width: 60%;
+    border-width: 7px;
+  }
+
+  .mission-badge {
+    right: 0;
+    width: 105px;
+    min-height: 120px;
+    padding: 12px;
+    border-width: 6px;
+  }
+
+  .mission-badge svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .mission-badge span {
+    font-size: 0.8rem;
+  }
+
+  .mission-eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+  }
+
+  .mission-description p {
+    text-align: left;
+  }
+
+  .mission.mission--animated:not(.mission--visible)
+    [data-mission-reveal="left"] {
+    transform: translateX(-35px);
+  }
+}
+
+/* Preferencia de movimiento reducido. */
+@media (prefers-reduced-motion: reduce) {
+  .mission [data-mission-reveal],
+  .mission.mission--animated:not(.mission--visible)
+    [data-mission-reveal],
+  .mission.mission--animated.mission--visible
+    [data-mission-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    transition-delay: 0ms;
+  }
+}

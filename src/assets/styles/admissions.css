@@ -1,0 +1,534 @@
+/* Espacio para el header de la página independiente. */
+.admissions-page {
+  min-height: 60vh;
+  padding-top: 90px;
+}
+
+.admissions {
+  --admissions-blue: #0a3d78;
+  --admissions-navy: #062650;
+  --admissions-yellow: #f2c438;
+
+  padding: 28px 24px 80px;
+  background: linear-gradient(135deg, #f2f6fb, #ffffff);
+  scroll-margin-top: 30px;
+}
+
+.admissions,
+.admissions *,
+.admissions *::before,
+.admissions *::after {
+  box-sizing: border-box;
+}
+
+.admissions-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/* Volver al colegio. */
+.admissions-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  min-height: 44px;
+  margin-bottom: 28px;
+  padding: 10px 18px;
+
+  border: 1px solid #d2deeb;
+  border-radius: 999px;
+  background: white;
+
+  color: var(--admissions-blue);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition:
+    background-color 200ms ease,
+    color 200ms ease;
+}
+
+/* Encabezado. */
+.admissions-heading {
+  max-width: 780px;
+  margin: 0 0 60px 190px;
+  text-align: center;
+}
+
+.admissions-eyebrow {
+ display: flex;
+  align-items: center;
+  gap: 14px;
+
+  color: #0a3d78;
+  font-size: 1.2rem;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.admissions-eyebrow::before {
+  content: "";
+  flex: 0 0 80px;
+  height: 3px;
+  background: #f2c438;
+}
+
+
+.admissions-heading h1 {
+  margin: 16px 0;
+  color: var(--admissions-navy);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.admissions-heading h1 span {
+  color: var(--admissions-blue);
+}
+
+.admissions-heading > p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #526277;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Presentación: video y contenido. */
+.admissions-intro {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+
+  overflow: hidden;
+  margin-bottom: 32px;
+  border: 1px solid #dce5ef;
+  border-radius: 24px;
+
+  background: #eaf3fb;
+  box-shadow: 0 12px 30px rgba(6, 38, 80, 0.07);
+}
+
+/* Conserva la proporción del video sin deformarlo. */
+.admissions-video {
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--admissions-navy);
+}
+
+.admissions-video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.admissions-copy {
+  min-width: 0;
+  padding: clamp(26px, 3vw, 40px);
+}
+
+.admissions-year {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 14px;
+  border-radius: 999px;
+
+  background: #fff5cc;
+  color: var(--admissions-navy);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.admissions-copy > h2 {
+  margin: 0 0 16px;
+  color: var(--admissions-navy);
+  font-size: clamp(1.5rem, 2.3vw, 2rem);
+  line-height: 1.25;
+}
+
+.admissions-copy > p {
+  margin: 0 0 26px;
+  color: #46566b;
+  line-height: 1.75;
+}
+
+/* Características de la propuesta educativa. */
+.admissions-values {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 18px;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.admissions-value {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 0;
+}
+
+.admissions-value > div {
+  min-width: 0;
+}
+
+.admissions-value-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 40px;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+
+  background: white;
+  color: var(--admissions-blue);
+  font-size: 1.5rem;
+}
+
+.admissions-value h3 {
+  margin: 0 0 6px;
+  color: var(--admissions-blue);
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.admissions-value p {
+  margin: 0;
+  color: #526277;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+/* Opciones de inscripción. */
+.admissions-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.admissions-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  padding: clamp(24px, 3vw, 36px);
+
+  border: 1px solid #dce5ef;
+  border-top: 4px solid var(--admissions-yellow);
+  border-radius: 20px;
+
+  background: white;
+  box-shadow: 0 10px 28px rgba(6, 38, 80, 0.06);
+}
+
+.admissions-card--returning {
+  border-top-color: yellow;
+}
+
+  
+
+ 
+.admissions-card-label {
+  color: var(--admissions-blue);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.admissions-card h2 {
+  margin: 16px 0;
+  color: var(--admissions-navy);
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  line-height: 1.3;
+}
+
+.admissions-card p {
+  margin: 0 0 26px;
+  color: #526277;
+  line-height: 1.75;
+}
+
+.admissions-card > .admissions-button,
+.admissions-card-actions {
+  margin-top: auto;
+}
+
+.admissions-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+}
+
+/* Botones. */
+.admissions-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  min-height: 48px;
+  max-width: 100%;
+  padding: 12px 20px;
+
+  border: 1px solid var(--admissions-blue);
+  border-radius: 999px;
+  background: var(--admissions-blue);
+
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+
+  transition:
+    transform 200ms ease,
+    background-color 200ms ease,
+    border-color 200ms ease;
+}
+
+.admissions-button > span {
+  flex-shrink: 0;
+}
+
+.admissions-button--yellow {
+  border-color: var(--admissions-yellow);
+  background: var(--admissions-yellow);
+  color: var(--admissions-navy);
+}
+
+.admissions-button--outline {
+  background: white;
+  color: var(--admissions-blue);
+}
+
+.admissions a:focus-visible {
+  outline: 3px solid var(--admissions-blue);
+  outline-offset: 4px;
+}
+
+.admissions-note {
+  margin: 22px 0 0;
+  color: #526277;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Efectos para dispositivos con mouse. */
+@media (hover: hover) and (pointer: fine) {
+  .admissions-back:hover {
+    background: var(--admissions-blue);
+    color: white;
+  }
+
+  .admissions-button:hover {
+    transform: translateY(-2px);
+    background: var(--admissions-navy);
+  }
+
+  .admissions-button--yellow:hover {
+    border-color: #e3b529;
+    background: #e3b529;
+  }
+
+  .admissions-button--outline:hover {
+    background: #edf3fa;
+  }
+}
+
+/* Tabletas: video arriba y texto debajo. */
+@media (max-width: 900px) {
+  .admissions-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .admissions-video {
+    max-width: 720px;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .admissions-page {
+    padding-top: 80px;
+  }
+}
+
+/* Celulares. */
+@media (max-width: 700px) {
+  .admissions-options {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .admissions {
+    padding: 22px 16px 56px;
+  }
+
+  .admissions-back {
+    padding-inline: 14px;
+    font-size: 0.85rem;
+  }
+
+  .admissions-heading {
+    margin-bottom: 28px;
+  }
+
+  .admissions-eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+  }
+
+  .admissions-heading > p {
+    font-size: 0.95rem;
+  }
+
+  .admissions-intro {
+    border-radius: 18px;
+  }
+
+  .admissions-copy {
+    padding: 24px 20px;
+  }
+
+  .admissions-values {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .admissions-card-actions,
+  .admissions-button {
+    width: 100%;
+  }
+}
+
+/* Respeta la preferencia de movimiento reducido. */
+@media (prefers-reduced-motion: reduce) {
+  .admissions-button,
+  .admissions-back {
+    transition: none;
+  }
+
+  .admissions-button:hover {
+    transform: none;
+  }
+}
+
+/* Tarjetas: misma fuente y textos más grandes. */
+.admissions-card {
+  font-family: inherit;
+  padding: clamp(28px, 3.5vw, 42px);
+  border: 1px solid transparent;
+  border-radius: 22px;
+  box-shadow: 0 12px 30px rgba(6, 38, 80, 0.12);
+}
+
+.admissions-card-label {
+  font-family: inherit;
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+}
+
+.admissions-card h2 {
+  margin: 18px 0;
+  font-family: inherit;
+  font-size: clamp(1.65rem, 2.3vw, 2rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.admissions-card p {
+  margin: 0 0 30px;
+  font-family: inherit;
+  font-size: clamp(1.05rem, 1.3vw, 1.15rem);
+  line-height: 1.75;
+}
+
+.admissions-card .admissions-button {
+  min-height: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* Estudiantes nuevos: amarillo institucional. */
+.admissions-card--new {
+  background: var(--admissions-yellow);
+}
+
+.admissions-card--new .admissions-card-label,
+.admissions-card--new h2,
+.admissions-card--new p {
+  color: var(--admissions-navy);
+}
+
+.admissions-card--new .admissions-button {
+  border-color: var(--admissions-blue);
+  background: var(--admissions-blue);
+  color: white;
+}
+
+/* Estudiantes antiguos: azul institucional. */
+.admissions-card--returning {
+  background: var(--admissions-blue);
+}
+
+.admissions-card--returning .admissions-card-label {
+  color: var(--admissions-yellow);
+}
+
+.admissions-card--returning h2,
+.admissions-card--returning p {
+  color: white;
+}
+
+/* Botón principal amarillo sobre la tarjeta azul. */
+.admissions-card--returning .admissions-button--yellow {
+  border-color: var(--admissions-yellow);
+  background: var(--admissions-yellow);
+  color: var(--admissions-navy);
+}
+
+/* Botón secundario con borde blanco. */
+.admissions-card--returning .admissions-button--outline {
+  border-color: white;
+  background: transparent;
+  color: white;
+}
+
+/* Foco visible sobre el fondo azul. */
+.admissions-card--returning a:focus-visible {
+  outline-color: white;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .admissions-card--new .admissions-button:hover {
+    background: var(--admissions-navy);
+    border-color: var(--admissions-navy);
+  }
+
+  .admissions-card--returning .admissions-button--yellow:hover {
+    background: #ffe078;
+    border-color: #ffe078;
+  }
+
+  .admissions-card--returning .admissions-button--outline:hover {
+    background: white;
+    color: var(--admissions-blue);
+  }
+}

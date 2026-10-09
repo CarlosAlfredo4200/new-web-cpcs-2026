@@ -1,0 +1,226 @@
+.testimonials {
+  padding: 80px 24px 90px;
+  background: linear-gradient(135deg, #f9f9f9, #ffffff);
+  scroll-margin-top: 24px;
+  box-shadow: rgba(50, 50, 93, 0.13) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.testimonials-heading {
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.testimonials-heading > span {
+  color: var(--color-blue);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+
+
+.testimonials-heading h1 {
+  margin: 16px 0;
+  color: var(--admissions-navy);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+
+.testimonials-heading > p {
+  margin: 0;
+  color: #526277;
+  line-height: 1.6;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 28px;
+}
+
+.testimonial-card {
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 14px 30px rgba(10, 61, 120, 0.14);
+
+  transition:
+    opacity 600ms ease,
+    transform 600ms ease;
+}
+
+/* Tarjetas laterales más abajo que la central. */
+.testimonial-card:first-child,
+.testimonial-card:last-child {
+  margin-top: 45px;
+}
+
+.testimonial-photo {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #e1eaf2;
+}
+
+.testimonial-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.testimonial-body {
+  position: relative;
+  padding: 62px 28px 30px;
+  text-align: center;
+}
+
+.testimonial-mark {
+  position: absolute;
+  top: -43px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: grid;
+  place-items: center;
+  width: 86px;
+  height: 86px;
+  border: 3px solid var(--color-yellow);
+  border-radius: 50%;
+  background: linear-gradient(145deg, #1766a0, var(--color-blue));
+  box-shadow: 0 6px 16px rgba(10, 61, 120, 0.25);
+
+  color: white;
+  font-family: Georgia, serif;
+  font-size: 4.5rem;
+  line-height: 1;
+  padding-top: 16px;
+}
+
+.testimonial-text {
+  margin: 0 0 24px;
+  color: #48576a;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-style: italic;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+
+.testimonial-body h3 {
+  margin: 0;
+  color: var(--color-blue);
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.testimonial-status {
+  margin: 10px 0 0;
+  color: #64748b;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+ 
+
+@media (max-width: 900px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    margin-inline: auto;
+    gap: 30px;
+  }
+
+  .testimonial-card:first-child,
+  .testimonial-card:last-child {
+    margin-top: 0;
+  }
+
+  .testimonial-photo {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonials {
+    padding: 56px 20px;
+  }
+
+  .testimonial-body {
+    padding: 58px 22px 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonials .testimonial-card {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+
+/* Evita que la entrada lateral genere scroll horizontal. */
+.testimonials {
+  overflow: clip;
+}
+
+/* Posición final de las tarjetas. */
+.testimonials .testimonial-card {
+  opacity: 1;
+  transform: none;
+
+  transition:
+    opacity 2000ms ease,
+    transform 1400ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Primera tarjeta: desde la izquierda. */
+.testimonials .testimonial-card--pending:nth-child(1) {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+/* Segunda tarjeta: desde abajo. */
+.testimonials .testimonial-card--pending:nth-child(2) {
+  opacity: 0;
+  transform: translateY(65px);
+}
+
+/* Tercera tarjeta: desde la derecha. */
+.testimonials .testimonial-card--pending:nth-child(3) {
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+/* Recorrido más corto en tableta y celular. */
+@media (max-width: 900px) {
+  .testimonials .testimonial-card--pending:nth-child(1) {
+    transform: translateX(-35px);
+  }
+
+  .testimonials .testimonial-card--pending:nth-child(2) {
+    transform: translateY(35px);
+  }
+
+  .testimonials .testimonial-card--pending:nth-child(3) {
+    transform: translateX(35px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonials .testimonial-card:nth-child(n) {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

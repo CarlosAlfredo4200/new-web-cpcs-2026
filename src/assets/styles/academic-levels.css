@@ -1,0 +1,361 @@
+.levels {
+  padding: 80px 24px;
+  overflow: hidden;
+  background: #f5f8fc;
+  scroll-margin-top: 24px;
+}
+
+.levels-container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.levels-heading {
+  max-width: 780px;
+  margin: 0 0 60px 190px;
+  text-align: center;
+}
+
+.levels-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  color: #0a3d78;
+  font-size: 1.2rem;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.levels-eyebrow::before {
+  content: "";
+  flex: 0 0 80px;
+  height: 3px;
+  background: #f2c438;
+}
+
+.levels-heading h2 {
+  margin: 22px 0 18px;
+  color: #062650;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(2.5rem, 5.5vw, 4.6rem);
+  font-weight: 800;
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+  
+}
+
+ 
+
+@media (max-width: 600px) {
+  .levels-heading {
+    margin-bottom: 50px;
+  }
+
+  .levels-eyebrow {
+    gap: 10px;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+  }
+
+  .levels-eyebrow::before {
+    flex-basis: 24px;
+  }
+
+  .levels-heading h2 {
+    font-size: clamp(2.2rem, 9vw, 3.2rem);
+  }
+}
+
+.levels-heading h1 {
+  margin: 16px 0;
+  color: var(--admissions-navy);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.levels-heading h2 {
+  margin: 12px 0;
+  color: var(--color-blue);
+  font-size: clamp(1.9rem, 4vw, 2.7rem);
+}
+
+.levels-heading > p {
+  margin: 0;
+  color: #526277;
+  line-height: 1.6;
+}
+
+.levels-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 28px;
+}
+
+/* Estilo compartido por las tres tarjetas. */
+.academic-card {
+  min-width: 0;
+  padding: 0 20px 20px;
+  border: 1px solid #e1e8f0;
+  border-top: 5px solid var(--color-yellow);
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 8px 24px rgba(10, 61, 120, 0.08);
+
+  transition:
+    transform 1450ms ease,
+    opacity 450ms ease,
+    box-shadow 250ms ease;
+}
+
+.academic-image {
+  position: relative;
+  isolation: isolate;
+  aspect-ratio: 4 / 3;
+  margin-top: -30px;
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--color-blue);
+  box-shadow: 0 8px 20px rgba(10, 61, 120, 0.16);
+}
+
+.academic-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+
+  /* Mantiene la proporción; recorta sin estirar. */
+  object-fit: cover;
+  object-position: center 35%;
+  transition: transform 450ms ease;
+}
+
+.academic-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    transparent 30%,
+    rgba(0, 25, 55, 0.85) 100%
+  );
+}
+
+.academic-image h3 {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  z-index: 2;
+  margin: 0;
+  color: white;
+  font-size: clamp(1.2rem, 1.7vw, 1.6rem);
+  line-height: 1.25;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Información visible por defecto, incluido celular. */
+.academic-reveal {
+  display: grid;
+  grid-template-rows: 1fr;
+  opacity: 1;
+  transition:
+    grid-template-rows 350ms ease,
+    opacity 300ms ease;
+}
+
+.academic-content {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.academic-schedule {
+  margin-top: 24px;
+  padding: 18px;
+  border-radius: 12px;
+  background: #f0f5fb;
+}
+
+.academic-schedule span {
+  color: #526277;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.academic-schedule p {
+  margin: 8px 0;
+  color: var(--color-blue);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.academic-details {
+  margin: 18px 0 0;
+  padding-left: 20px;
+  color: #405169;
+  line-height: 1.9;
+}
+
+/* Entrada al hacer scroll. */
+.levels--animated:not(.levels--visible) .academic-card {
+  opacity: 0;
+}
+
+.levels--animated:not(.levels--visible) .academic-card:first-child {
+  transform: translateX(-50px);
+}
+
+.levels--animated:not(.levels--visible) .academic-card:nth-child(2) {
+  transform: translateY(30px);
+}
+
+.levels--animated:not(.levels--visible) .academic-card:last-child {
+  transform: translateX(50px);
+}
+
+/* Zoom para dispositivos con mouse. */
+@media (hover: hover) and (pointer: fine) {
+  .academic-card:hover,
+  .academic-card:focus-within {
+    box-shadow: 0 16px 32px rgba(10, 61, 120, 0.16);
+  }
+
+  .academic-card:hover .academic-image img,
+  .academic-card:focus-within .academic-image img {
+    transform: scale(1.08);
+  }
+}
+
+/* Despliegue al pasar el mouse en pantallas amplias. */
+@media (min-width: 901px) and (hover: hover) and (pointer: fine) {
+  .academic-card .academic-reveal {
+    grid-template-rows: 0fr;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .academic-card:hover .academic-reveal,
+  .academic-card:focus-within .academic-reveal {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 900px) {
+  .levels-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    max-width: 560px;
+    margin-inline: auto;
+  }
+
+  .academic-image h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .levels {
+    padding: 56px 20px;
+  }
+
+  .academic-card {
+    padding-inline: 16px;
+  }
+
+  .academic-image h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .levels .academic-card {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .academic-card .academic-image img {
+    transform: none;
+    transition: none;
+  }
+
+  .academic-card .academic-reveal {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    visibility: visible;
+    transition: none;
+  }
+}
+
+/* Libro dorado junto al título. */
+.levels-title-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 22px 0 18px;
+}
+
+.levels-title-row h2 {
+  min-width: 0;
+  margin: 0;
+}
+
+.levels-book {
+  display: block;
+  flex: 0 0 auto;
+  width: clamp(65px, 8vw, 105px);
+  height: auto;
+  color: #d9a925;
+}
+
+@media (max-width: 600px) {
+  .levels-title-row {
+    gap: 12px;
+  }
+
+  .levels-book {
+    width: 48px;
+  }
+
+  .levels-title-row h2 {
+    font-size: clamp(1.8rem, 7.5vw, 2.8rem);
+  }
+}
+
+/* Fondo blanco con patrón escolar tenue. */
+.levels {
+  position: relative;
+  isolation: isolate;
+  background: #ffffff;
+}
+
+.levels::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  background-image: url("../images/fondo-escolar.jpg");
+  background-repeat: repeat;
+  background-size: 240px auto;
+
+  opacity: 0.04;
+
+  /* Neutraliza posibles decoraciones anteriores. */
+  width: auto;
+  height: auto;
+  border: 0;
+  border-radius: 0;
+  /* box-shadow: none; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}

@@ -1,0 +1,462 @@
+.hero {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(260px, 28%) 1fr 220px;
+  align-items: center;
+
+  min-height: 680px;
+  min-height: clamp(680px, 85svh, 900px);
+  padding-top: 90px;
+  background: #edf3f8;
+}
+
+/* Fotografía detrás de los paneles. */
+.hero-photo {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+.hero-photo picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-placeholder {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  padding: 30px;
+  background: linear-gradient(135deg, #c5d9e9, #eaf2d9);
+  color: var(--color-blue);
+  text-align: center;
+}
+
+/* Panel blanco con borde curvo. */
+.hero-branding {
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding: 40px 32px 45px;
+}
+
+.hero-branding::before {
+  content: '';
+  position: absolute;
+  inset: -90px -35px 0 0;
+  z-index: -1;
+
+  background: rgba(255, 255, 255, 0.97);
+  border-right: 5px solid var(--color-yellow);
+  border-radius: 0 0 48% 0 / 0 0 22% 0;
+}
+
+.hero-title {
+  max-width: 320px;
+  margin: 0;
+  color: var(--color-blue);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.7rem, 3.4vw, 2.7rem);
+  line-height: 1.08;
+  text-transform: uppercase;
+}
+
+.hero-acronym {
+  margin-top: 12px;
+  color: var(--color-blue);
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.hero-divider {
+  width: 100%;
+  max-width: 360px;
+  height: 4px;
+  margin-block: 20px;
+  background: #fada00;
+}
+
+.hero-slogan {
+  max-width: 260px;
+  margin: 0 0 2px;
+  padding: 18px;
+  color: rgb(26, 26, 54);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.18rem, 2.4vw, 2.7rem);
+  line-height: 1.4;
+  text-align: left;
+}
+
+.hero-slogan strong {
+  display: block;
+}
+
+.hero-logo {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 24px;
+  object-fit: contain;
+}
+
+.hero-logo-placeholder {
+  display: grid;
+  place-items: center;
+  width: 130px;
+  height: 130px;
+  margin-bottom: 24px;
+  border: 3px solid var(--color-yellow);
+  border-radius: 50%;
+  color: var(--color-blue);
+  font-weight: 700;
+}
+
+.hero-admissions {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 12px 20px;
+  border: 2px solid var(--color-yellow);
+  border-radius: 999px;
+  margin-left: 50px;
+
+  background: #1c4473;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+
+  transition: transform 180ms ease, background-color 180ms ease;
+}
+
+.hero-admissions:hover {
+  transform: translateY(-2px);
+  background: #072d59;
+  box-shadow: rgb(255, 234, 1) 0px 3px 2px 3px;
+}
+
+/* Accesos flotantes a la derecha. */
+.hero-links {
+  grid-column: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px 20px 24px 0;
+}
+
+.hero-links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 54px;
+  padding: 15px 18px;
+
+  border-left: 4px solid var(--color-yellow);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 5px 18px rgba(0, 35, 70, 0.15);
+
+  color: var(--color-blue);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: transform 110ms ease;
+}
+
+.hero-links a:hover {
+  transform: translateX(-6px);
+}
+
+@media (max-width: 1000px) and (min-width: 701px) {
+  .hero {
+    grid-template-columns: 290px 1fr 180px;
+  }
+
+  .hero-branding {
+    padding-inline: 22px;
+  }
+
+  .hero-links {
+    padding-right: 12px;
+  }
+
+  .hero-links a {
+    padding-inline: 12px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    padding-top: 80px;
+    background: white;
+  }
+
+  .hero-photo {
+    position: relative;
+    inset: auto;
+    z-index: auto;
+    order: 2;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+  }
+
+  .hero-branding {
+    order: 1;
+    align-items: center;
+    width: 100%;
+    padding: 30px 24px;
+    text-align: center;
+  }
+
+  .hero-branding::before {
+    display: none;
+  }
+
+  .hero-title {
+    max-width: 450px;
+    font-size: clamp(1.8rem, 6vw, 2.3rem);
+    
+  }
+
+  .hero-slogan {
+    max-width: 400px;
+    font-size: 1.2rem;
+  }
+
+  .hero-logo {
+    width: 110px;
+    height: 110px;
+  }
+
+  .hero-links {
+    order: 3;
+    width: 100%;
+    padding: 20px;
+    background: #f3f6fa;
+  }
+
+  .hero-links a {
+    min-height: 52px;
+  }
+}
+
+/* Hero más panorámico en computador y tableta. */
+@media (min-width: 701px) {
+  .hero {
+    min-height: clamp(560px, 46vw, 680px);
+    padding-top: 75px;
+  }
+
+  .hero-branding {
+    padding: 24px 28px 28px;
+  }
+
+  .hero-branding::before {
+    inset: -75px -25px 0 0;
+  }
+
+  .hero-title {
+    max-width: 350px;
+    font-size: clamp(1.6rem, 2.4vw, 2.5rem);
+    line-height: 1.06;
+  }
+
+  .hero-acronym {
+    margin-top: 8px;
+    font-size: 1rem;
+  }
+
+  .hero-divider {
+    margin-block: 12px;
+  }
+
+  .hero-slogan {
+    max-width: 300px;
+    margin-top: 30px  ;
+    margin-bottom: 14px;
+    font-size: clamp(1rem, 1.4vw, 2rem);
+    line-height: 1.2;
+  }
+
+  .hero-logo {
+    width: 150px;
+    height: 150px;
+    margin: -10px 110px;
+  }
+
+  .hero-logo-placeholder {
+    width: 105px;
+    height: 105px;
+    margin-bottom: 16px;
+  }
+
+  .hero-admissions {
+    margin-top: 50px;
+    min-height: 42px;
+    padding: 20px 16px;
+    font-size: 1.8rem;
+  }
+
+  .hero-photo img {
+    object-fit: cover;
+    object-position: center 60%;
+  }
+}
+
+/* Panel blanco con curva superior e inferior. */
+@media (min-width: 701px) {
+  .hero-branding::before {
+    inset: -75px -35px 0 0;
+
+    background: #ffffff;
+    border-right: 3px solid #c5a059;
+
+    border-radius:
+      0 70px 100px 0 /
+      0 160px 150px 0;
+
+    box-shadow: 8px 0 20px rgba(0, 35, 70, 0.08);
+  }
+}
+
+/* Color base: funciona aunque no se admita el degradado. */
+.hero-title {
+   
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+   
+}
+
+.hero-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 900;
+  color: #1c4473;
+
+  
+
+  /* Elimina el degradado dorado anterior. */
+  /* background: none;
+  -webkit-text-fill-color: #fada00; */
+
+  /* Contorno fino para distinguirlo del blanco. */
+  /* -webkit-text-stroke: 0.3px rgb(254, 254, 5); */
+
+  /* Sombra discreta que aporta profundidad. */
+  text-shadow: 0 2px 1px #fada00;
+}
+
+/* Conserva la legibilidad en modo de alto contraste. */
+@media (forced-colors: active) {
+  .hero-title {
+    color: CanvasText;
+    -webkit-text-fill-color: CanvasText;
+    -webkit-text-stroke: 0;
+    text-shadow: none;
+  }
+}
+
+.hero-acronym {
+  color: #88702b;
+}
+
+@media (forced-colors: active) {
+  .hero-title {
+    background: none;
+    color: CanvasText;
+  }
+}
+
+/* Panel blanco con curva cóncava hacia el centro. */
+@media (min-width: 701px) {
+  .hero-branding::before {
+    opacity: .85;
+    inset: -75px -35px 0 0;
+
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 700' preserveAspectRatio='none'%3E%3Cpath d='M0 0 H495 C495 160 385 240 385 350 C385 460 495 540 495 700 H0 Z' fill='white'/%3E%3Cpath d='M495 0 C495 160 385 240 385 350 C385 460 495 540 495 700' fill='none' stroke='%23c5a059' stroke-width='3' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E")
+      center / 100% 100% no-repeat;
+
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  /* Mantiene el contenido dentro de la zona blanca más estrecha. */
+  .hero-branding {
+    padding-right: 65px;
+  }
+
+  .hero-title,
+  .hero-slogan {
+    max-width: 100%;
+  }
+}
+
+.hero-links a.hero-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  min-height: 46px;
+  padding: 18px 24px;
+  border: 2px solid var(--color-yellow);
+  border-radius: 999px;
+
+   
+
+  background: #1c4473;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease,
+    box-shadow 250ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .hero-links a.hero-contact:hover {
+    transform: translateY(-2px);
+    background: #072d59;
+     box-shadow: rgb(255, 234, 1) 0px 3px 2px 3px;
+  }
+}
+
+.hero-links a.hero-contact:focus-visible {
+  outline: 3px solid var(--color-yellow);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-links a.hero-contact {
+    transition: none;
+  }
+
+  .hero-links a.hero-contact:hover {
+    transform: none;
+  }
+}
