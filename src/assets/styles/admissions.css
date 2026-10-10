@@ -140,9 +140,9 @@
   padding: 8px 14px;
   border-radius: 999px;
 
-  background: #fff5cc;
+  background: var(--admissions-yellow);
   color: var(--admissions-navy);
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
@@ -150,7 +150,7 @@
   margin: 0 0 16px;
   color: var(--admissions-navy);
   font-size: clamp(1.5rem, 2.3vw, 2rem);
-  line-height: 1.25;
+  line-height: 1.45;
 }
 
 .admissions-copy > p {

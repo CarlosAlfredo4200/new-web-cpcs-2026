@@ -160,7 +160,7 @@ export default function Admissions() {
             aria-labelledby="admissions-returning-title"
           >
             <span className="admissions-card-label">Estudiantes antiguos</span>
-            <span className="returning_v_title">Estudiantes antiguos</span>
+           
 
             <h2 id="admissions-returning-title">Sigamos creciendo juntos</h2>
 

@@ -110,6 +110,7 @@
   height: 150px;
   margin-bottom: 24px;
   object-fit: contain;
+   
 }
 
 .hero-logo-placeholder {
@@ -132,12 +133,13 @@
   padding: 12px 20px;
   border: 2px solid var(--color-yellow);
   border-radius: 999px;
-  margin-left: 50px;
+  margin-left: 10px;
+ 
 
   background: #1c4473;
   color: white;
-  font-size: 0.9rem;
-  font-weight: 700;
+  font-size: 0.7rem;
+  font-weight: 200;
   text-align: center;
   text-decoration: none;
 
@@ -201,6 +203,7 @@
     padding-inline: 12px;
     font-size: 0.85rem;
   }
+ 
 }
 
 @media (max-width: 700px) {
@@ -259,6 +262,17 @@
   .hero-links a {
     min-height: 52px;
   }
+  .hero-admissions {
+    margin-top: 50px;
+    min-height: 42px;
+    padding: 20px 16px;
+    font-size: 1.8rem;
+    
+    
+    
+  }
+  
+  
 }
 
 /* Hero más panorámico en computador y tableta. */
@@ -314,8 +328,13 @@
   .hero-admissions {
     margin-top: 50px;
     min-height: 42px;
-    padding: 20px 16px;
-    font-size: 1.8rem;
+    
+    font-size: 1.7rem;
+    
+  }
+  .hero-admissions{
+    margin-left: 50px;
+    
   }
 
   .hero-photo img {
