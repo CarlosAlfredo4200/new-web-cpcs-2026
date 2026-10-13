@@ -24,11 +24,7 @@ const quickLinks = [
 
 export default function Hero() {
   return (
-    <section
-      id="inicio"
-      className="hero"
-      aria-labelledby="hero-title"
-    >
+    <section id="inicio" className="hero" aria-labelledby="hero-title">
       {/* Fotografías que cambian y hacen zoom. */}
       <HeroCarousel />
 
@@ -41,7 +37,8 @@ export default function Hero() {
         <div className="hero-divider" aria-hidden="true" />
 
         <p className="hero-slogan">
-         "Formar líderes que sean testimonio de vida y de educación Cristocéntrica para Colombia y las naciones"
+          "Formar líderes que sean testimonio de vida y de educación
+          Cristocéntrica para Colombia y las naciones"
         </p>
 
         {schoolLogo ? (
@@ -53,9 +50,7 @@ export default function Hero() {
             height="180"
           />
         ) : (
-          <div className="hero-logo-placeholder">
-            Logo CPCS
-          </div>
+          <div className="hero-logo-placeholder">Logo CPCS</div>
         )}
 
         <Link className="hero-admissions" to="/admisiones">
@@ -63,20 +58,29 @@ export default function Hero() {
         </Link>
       </div>
 
-    <nav className="hero-links" aria-label="Accesos destacados">
-  {quickLinks.map((link) => (
-    <a
-      key={link.href}
-      href={link.href}
-      className={
-        link.href === "/contacto" ? "hero-contact" : undefined
-      }
-    >
-      <span>{link.label}</span>
-      <span aria-hidden="true">↗</span>
-    </a>
-  ))}
-</nav>
+      <nav className="hero-links" aria-label="Accesos destacados">
+        {quickLinks.map((link) => {
+          const className =
+            link.href === "/contacto" ? "hero-contact" : undefined;
+
+          const content = (
+            <>
+              <span>{link.label}</span>
+              <span aria-hidden="true">↗</span>
+            </>
+          );
+
+          return link.href.startsWith("/") ? (
+            <Link key={link.href} to={link.href} className={className}>
+              {content}
+            </Link>
+          ) : (
+            <a key={link.href} href={link.href} className={className}>
+              {content}
+            </a>
+          );
+        })}
+      </nav>
     </section>
   );
 }

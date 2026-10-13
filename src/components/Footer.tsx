@@ -31,7 +31,7 @@ export default function Footer() {
             <h2>Colegio Panamericano Colombosueco</h2>
             <p>
               Despierta, refuerza y ensancha
-              nuevas cosas DIOS hará. ISAÍAS 54:2
+              nuevas cosas DIOS hará. ISAÍAS 43:19
             </p>
           </div>
         </div>
