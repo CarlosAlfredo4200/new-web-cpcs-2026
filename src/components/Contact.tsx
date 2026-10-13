@@ -88,6 +88,7 @@ export default function Contact() {
               </div>
 
               <FiArrowUpRight className="contact-arrow" aria-hidden="true" />
+              
             </a>
             <a
               className="contact-method"
