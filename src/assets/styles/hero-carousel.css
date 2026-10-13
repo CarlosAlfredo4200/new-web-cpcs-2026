@@ -21,7 +21,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 60%;
+  object-position: center 30%;
   transform: scale(1);
 }
 
@@ -62,7 +62,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 60%;
+  margin-top: 45px;
+  
 }
 
 /* El zoom permanece activo durante la salida de la imagen. */
@@ -217,7 +218,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 60%;
+  object-position: center 0%;
 
   animation: none;
   transition: transform 0s linear 2100ms;
@@ -452,9 +453,10 @@
 /* Ubicación del anuncio en la zona central del hero. */
 .hero-admissions-art {
   position: absolute;
-  top: 35%;
-  left: 74%;
+  top: 70%;
+  left: 68%;
   transform: translate(-50%, -50%);
+  z-index: 2;
 
   width: clamp(250px, 32vw, 470px);
   text-align: center;
@@ -548,4 +550,8 @@
     animation: none;
     opacity: 0.45;
   }
+}
+
+.hero-admissions-art {
+  scale: 0.6;
 }

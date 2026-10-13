@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 
-import firstImage from "../assets/images/hero_3_v2.jpg";
+import firstImage from "../assets/images/hero-2.jpg";
 import secondImage from "../assets/images/hero-desktop.jpg.jpg";
-import thirdImage from "../assets/images/hero-2.jpg";
+import thirdImage from "../assets/images/hero-3-v2.jpg";
 
 import AdmissionsHeroEffect from "./AdmissionsHeroEffect";
 import "../assets/styles/hero-carousel.css";
