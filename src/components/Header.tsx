@@ -29,7 +29,9 @@ export default function Header() {
           aria-label="CPCS — Inicio"
           onClick={closeMenu}
         >
-          CPCS
+          <span translate="no" className="notranslate">
+            CPCS
+          </span>
         </Link>
 
         <button
@@ -60,12 +62,11 @@ export default function Header() {
             </Link>
           </li>
 
-          {/* SchoolMenu ya incluye su propio li. */}
           <SchoolMenu key={location.key} onNavigate={closeMenu} />
 
           {navigation.map((item) => {
-            const openInNewTab =
-              item.label === "Q10" || item.label === "Intranet";
+            const isQ10 = item.label === "Q10";
+            const openInNewTab = isQ10 || item.label === "Intranet";
 
             return (
               <li key={item.href}>
@@ -74,6 +75,8 @@ export default function Header() {
                   onClick={closeMenu}
                   target={openInNewTab ? "_blank" : undefined}
                   rel={openInNewTab ? "noopener noreferrer" : undefined}
+                  translate={isQ10 ? "no" : undefined}
+                  className={isQ10 ? "notranslate" : undefined}
                 >
                   {item.label}
                 </a>

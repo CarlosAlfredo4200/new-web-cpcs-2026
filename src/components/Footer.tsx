@@ -1,15 +1,16 @@
-import '../assets/styles/footer.css'
+import { Link } from "react-router-dom";
+import "../assets/styles/footer.css";
 
 const images = import.meta.glob<string>(
-  '../assets/images/*.{png,jpg,jpeg,webp,svg}',
+  "../assets/images/*.{png,jpg,jpeg,webp,svg}",
   {
     eager: true,
-    query: '?url',
-    import: 'default',
+    query: "?url",
+    import: "default",
   },
-)
+);
 
-const schoolLogo = images['../assets/images/logo-colegio.png']
+const schoolLogo = images["../assets/images/logo-colegio.png"];
 
 export default function Footer() {
   return (
@@ -29,15 +30,17 @@ export default function Footer() {
           <div>
             <h2>Colegio Panamericano Colombosueco</h2>
             <p>
-              "Despierta, refuerza y ensancha nuevas cosas DIOS hará"
+              Despierta, refuerza y ensancha
+              nuevas cosas DIOS hará. ISAÍAS 54:2
             </p>
           </div>
         </div>
 
         <div className="footer-info">
           <h3>Ubicación</h3>
+
           <address>
-            Cra. 83 N.° 78-30
+            Cra. 83 N.º 78-30
             <br />
             Robledo Diamante
             <br />
@@ -47,8 +50,20 @@ export default function Footer() {
 
         <div className="footer-info">
           <h3>Horario de atención</h3>
-          <p>Lunes a viernes</p>
-          <p>8:00 a. m. – 3:00 p. m.</p>
+
+          <p>
+            <strong>Lunes a jueves</strong>
+            <br />
+            7:00 a. m. – 12:00 del mediodía
+            <br />
+            1:00 p. m. – 3:00 p. m.
+          </p>
+
+          <p>
+            <strong>Viernes</strong>
+            <br />
+            7:00 a. m. – 12:30 p. m.
+          </p>
         </div>
       </div>
 
@@ -56,8 +71,14 @@ export default function Footer() {
         <p>
           © {new Date().getFullYear()} Colegio Panamericano Colombosueco
         </p>
-        <a href="#inicio">Volver al inicio ↑</a>
+
+        <Link
+          to="/"
+          onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
+        >
+          Volver al inicio ↑
+        </Link>
       </div>
     </footer>
-  )
+  );
 }

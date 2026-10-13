@@ -19,7 +19,7 @@ const quickLinks = [
   { label: "Nuestro colegio", href: "#nuestro-colegio" },
   { label: "Niveles", href: "#niveles" },
   { label: "Comunidad CPCS", href: "#comunidad" },
-  { label: "Contáctanos", href: "#contactanos" },
+  { label: "Contáctanos", href: "/contacto" },
 ];
 
 export default function Hero() {
@@ -69,7 +69,7 @@ export default function Hero() {
       key={link.href}
       href={link.href}
       className={
-        link.href === "#contactanos" ? "hero-contact" : undefined
+        link.href === "/contacto" ? "hero-contact" : undefined
       }
     >
       <span>{link.label}</span>

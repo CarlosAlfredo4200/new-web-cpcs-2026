@@ -278,7 +278,7 @@
 
 /* Anuncio con franjas tipo pincelada. */
 .hero-admissions-art {
-  width: clamp(250px, 32vw, 470px);
+  width: clamp(200px, 32vw, 470px);
   aspect-ratio: auto;
 }
 

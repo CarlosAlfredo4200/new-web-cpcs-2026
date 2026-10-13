@@ -1,9 +1,4 @@
-import {
-  BrowserRouter,
-  Link,
-  Route,
-  Routes,
-} from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -13,6 +8,7 @@ import Testimonials from "./components/Testimonials";
 import Admissions from "./components/Admissions";
 import WhoWeAre from "./components/WhoWeAre";
 import MissionVision from "./components/MissionVision";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import WhatsAppWidget from "./components/WhatsAppWidget";
 
@@ -51,6 +47,11 @@ export default function App() {
         <Route
           path="/nuestro-colegio/mision-vision"
           element={<MissionVision />}
+        />
+
+        <Route
+          path="/contacto"
+          element={<Contact />}
         />
 
         <Route
