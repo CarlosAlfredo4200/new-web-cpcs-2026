@@ -446,3 +446,116 @@
 .contact-method .contact-friday {
   margin-top: 16px;
 }
+
+/* Tarjetas de sedes con el estilo de Admisiones. */
+.contact-campus {
+  padding: clamp(28px, 3.5vw, 42px);
+  border: 1px solid transparent;
+  border-radius: 22px;
+  font-family: inherit;
+  box-shadow: 0 12px 30px rgba(6, 38, 80, 0.12);
+}
+
+.contact-campus h3 {
+  margin: 18px 0;
+  font-family: inherit;
+  font-size: clamp(1.65rem, 2.3vw, 2rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.contact-campus address {
+  margin: 0 0 30px;
+  font-size: clamp(1.05rem, 1.3vw, 1.15rem);
+  line-height: 1.75;
+}
+
+.contact-campus address strong {
+  font-size: inherit;
+}
+
+.contact-campus .contact-button--location {
+  min-height: 50px;
+  margin-top: auto;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* Bachillerato: amarillo, como estudiantes nuevos. */
+.contact-campus--bachillerato {
+  background: var(--contact-yellow);
+}
+
+.contact-campus--bachillerato h3,
+.contact-campus--bachillerato address,
+.contact-campus--bachillerato address strong {
+  color: var(--contact-navy);
+}
+
+.contact-campus--bachillerato .contact-campus-icon {
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--contact-blue);
+}
+
+.contact-campus--bachillerato .contact-button--location {
+  border-color: var(--contact-blue);
+  background: var(--contact-blue);
+  color: white;
+}
+
+/* Preescolar: azul, como estudiantes antiguos. */
+.contact-campus--preescolar {
+  background: var(--contact-blue);
+}
+
+.contact-campus--preescolar h3,
+.contact-campus--preescolar address,
+.contact-campus--preescolar address strong {
+  color: white;
+}
+
+.contact-campus--preescolar .contact-campus-icon {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--contact-yellow);
+}
+
+.contact-campus--preescolar .contact-button--location {
+  border-color: var(--contact-yellow);
+  background: var(--contact-yellow);
+  color: var(--contact-navy);
+}
+
+.contact-campus--preescolar a:focus-visible {
+  outline-color: white;
+}
+
+.contact-campus--bachillerato a:focus-visible {
+  outline-color: var(--contact-navy);
+}
+
+/* Botones: conserva el movimiento sutil. */
+@media (hover: hover) and (pointer: fine) {
+  .contact-campus--bachillerato .contact-button--location:hover {
+    border-color: var(--contact-navy);
+    background: var(--contact-navy);
+    color: white;
+  }
+
+  .contact-campus--preescolar .contact-button--location:hover {
+    border-color: #ffe078;
+    background: #ffe078;
+    color: var(--contact-navy);
+  }
+}
+
+/* Centrado en celular. */
+@media (max-width: 600px) {
+  .contact-campus {
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-campus .contact-button--location {
+    width: 100%;
+  }
+}

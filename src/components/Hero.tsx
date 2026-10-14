@@ -25,13 +25,13 @@ const quickLinks = [
 export default function Hero() {
   return (
     <section id="inicio" className="hero" aria-labelledby="hero-title">
-      {/* Fotografías que cambian y hacen zoom. */}
+      
       <HeroCarousel />
 
       {/* Panel institucional fijo. */}
       <div className="hero-branding">
         <h1 id="hero-title" className="hero-title">
-          Colegio Panamericano Colombosueco
+          Colegio Panamericano Colombo Sueco
         </h1>
 
         <div className="hero-divider" aria-hidden="true" />

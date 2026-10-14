@@ -18,7 +18,7 @@ function findImage(name: string) {
 }
 
 const africaImage = findImage("africa-dicko");
-const supportImage = findImage("apoyo-misionero");
+const supportImage = findImage("africa-dicko-2");
 
 export default function MissionWork() {
   const sectionRef = useRef<HTMLElement>(null);

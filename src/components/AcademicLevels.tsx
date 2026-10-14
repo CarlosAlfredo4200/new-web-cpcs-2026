@@ -30,7 +30,7 @@ const levels = [
     title: "Básica primaria",
     image: primaryImage,
     alt: "Estudiantes de básica primaria del colegio",
-    schedule: "7:00 a. m. – 1:15 p. m.",
+    schedule: "7:00 a. m. – 1:00 p. m.",
     day: "Jornada única",
     details: [],
   },
