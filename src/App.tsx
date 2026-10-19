@@ -11,6 +11,8 @@ import MissionVision from "./components/MissionVision";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import WhatsAppWidget from "./components/WhatsAppWidget";
+import Founders from "./components/Founders";
+import EducationalCosts from "./components/EducationalCosts";
 
 export default function App() {
   return (
@@ -26,6 +28,7 @@ export default function App() {
               <AcademicLevels />
               <MissionWork />
               <Testimonials />
+              <Founders />
             </main>
           }
         />
@@ -52,6 +55,11 @@ export default function App() {
         <Route
           path="/contacto"
           element={<Contact />}
+        />
+
+        <Route
+          path="/costos-educativos"
+          element={<EducationalCosts />}
         />
 
         <Route

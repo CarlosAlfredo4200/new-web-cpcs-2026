@@ -309,8 +309,10 @@
     max-width: 300px;
     margin-top: 30px  ;
     margin-bottom: 14px;
-    font-size: clamp(1rem, 1.4vw, 2rem);
-    line-height: 1.2;
+    margin-right: 18px;
+    
+    font-size: clamp(1rem, 1.3vw, 2rem);
+    line-height: 1.1  ;
   }
 
   .hero-logo {

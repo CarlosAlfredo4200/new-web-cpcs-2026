@@ -5,14 +5,15 @@ import SchoolMenu from "./SchoolMenu";
 import "../assets/styles/header.css";
 
 const navigation = [
-  { label: "Niveles", href: "/#niveles" },
-  { label: "Comunidad CPCS", href: "/#comunidad" },
+  // { label: "Niveles", href: "/#niveles" },
+  { label: "Costos", href: "/costos-educativos" },
+  // { label: "Comunidad CPCS", href: "/#comunidad" },
   { label: "Q10", href: "https://cpcs.q10.com" },
   { label: "Intranet", href: "https://intranetcpcs.onrender.com/" },
 ];
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); 
   const toggleRef = useRef<HTMLButtonElement>(null);
   const location = useLocation();
 
@@ -57,7 +58,7 @@ export default function Header() {
           }}
         >
           <li>
-            <Link to="/admisiones" onClick={closeMenu}>
+            <Link  to="/admisiones" onClick={closeMenu}>
               Admisiones
             </Link>
           </li>
@@ -65,21 +66,27 @@ export default function Header() {
           <SchoolMenu key={location.key} onNavigate={closeMenu} />
 
           {navigation.map((item) => {
+            const isExternal = item.href.startsWith("https://");
             const isQ10 = item.label === "Q10";
-            const openInNewTab = isQ10 || item.label === "Intranet";
 
             return (
               <li key={item.href}>
-                <a
-                  href={item.href}
-                  onClick={closeMenu}
-                  target={openInNewTab ? "_blank" : undefined}
-                  rel={openInNewTab ? "noopener noreferrer" : undefined}
-                  translate={isQ10 ? "no" : undefined}
-                  className={isQ10 ? "notranslate" : undefined}
-                >
-                  {item.label}
-                </a>
+                {isExternal ? (
+                  <a
+                    href={item.href}
+                    onClick={closeMenu}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    translate={isQ10 ? "no" : undefined}
+                    className={isQ10 ? "notranslate" : undefined}
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <Link to={item.href} onClick={closeMenu}>
+                    {item.label}
+                  </Link>
+                )}
               </li>
             );
           })}

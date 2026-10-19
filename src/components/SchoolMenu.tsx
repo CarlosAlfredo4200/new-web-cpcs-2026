@@ -8,9 +8,7 @@ type SchoolMenuProps = {
   onNavigate?: () => void;
 };
 
-export default function SchoolMenu({
-  onNavigate,
-}: SchoolMenuProps) {
+export default function SchoolMenu({ onNavigate }: SchoolMenuProps) {
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLLIElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
@@ -57,9 +55,7 @@ export default function SchoolMenu({
 
         // Mantiene abierto si el teclado está dentro del submenú.
         const focusedElement = document.activeElement;
-        const submenu = event.currentTarget.querySelector(
-          ".school-submenu",
-        );
+        const submenu = event.currentTarget.querySelector(".school-submenu");
 
         if (
           focusedElement instanceof Node &&
@@ -88,10 +84,7 @@ export default function SchoolMenu({
           buttonRef.current?.focus();
         }
 
-        if (
-          event.key === "ArrowDown" &&
-          event.target === buttonRef.current
-        ) {
+        if (event.key === "ArrowDown" && event.target === buttonRef.current) {
           event.preventDefault();
           setOpen(true);
 
@@ -116,9 +109,7 @@ export default function SchoolMenu({
           // Con teclado o toque alterna entre abierto y cerrado.
           const mouseInteraction =
             event.detail > 0 &&
-            window.matchMedia(
-              "(hover: hover) and (pointer: fine)",
-            ).matches;
+            window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 
           if (mouseInteraction) {
             setOpen(true);
@@ -128,19 +119,10 @@ export default function SchoolMenu({
         }}
       >
         Nuestro colegio
-
-        <FaCheck
-          size={20}
-          color="#f2c438"
-          aria-hidden="true"
-        />
+        <FaCheck size={20} color="#f2c438" aria-hidden="true" />
       </button>
 
-      <ul
-        id="school-submenu"
-        className="school-submenu"
-        hidden={!open}
-      >
+      <ul id="school-submenu" className="school-submenu" hidden={!open}>
         <li>
           <Link
             to="/nuestro-colegio/quienes-somos"
@@ -168,6 +150,9 @@ export default function SchoolMenu({
             Misión y visión
           </Link>
         </li>
+        
+
+      
       </ul>
     </li>
   );

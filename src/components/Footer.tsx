@@ -28,7 +28,7 @@ export default function Footer() {
           )}
 
           <div>
-            <h2>Colegio Panamericano Colombosueco</h2>
+            <h2>Colegio Panamericano Colombo Sueco</h2>
             <p>
               Despierta, refuerza y ensancha
               nuevas cosas DIOS hará. ISAÍAS 43:19
@@ -69,7 +69,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <p>
-          © {new Date().getFullYear()} Colegio Panamericano Colombosueco
+          © {new Date().getFullYear()} Colegio Panamericano Colombo Sueco
         </p>
 
         <Link

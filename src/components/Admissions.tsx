@@ -107,9 +107,9 @@ export default function Admissions() {
             <h2>Formación integral con propósito</h2>
 
             <p>
-              Acompañamos a las familias que buscan para sus hijos una educación
-              que integra la excelencia académica, la disciplina, el esfuerzo,
-              los valores y el respeto, fundamentada en la Palabra de Dios.
+              Acompañamos a familias que buscan una educación con excelencia
+              académica, disciplina, valores y respeto, fundamentada en la
+              Palabra de Dios.
             </p>
 
             <ul className="admissions-values">
@@ -160,7 +160,6 @@ export default function Admissions() {
             aria-labelledby="admissions-returning-title"
           >
             <span className="admissions-card-label">Estudiantes antiguos</span>
-           
 
             <h2 id="admissions-returning-title">Sigamos creciendo juntos</h2>
 
@@ -193,9 +192,7 @@ export default function Admissions() {
           </article>
         </div>
 
-        <p className="admissions-note">
-          Los formularios y las consultas se abren en Q10, en una nueva pestaña.
-        </p>
+         
       </div>
     </section>
   );

@@ -1,0 +1,423 @@
+.founders-page {
+  --founders-blue: #1c4473;
+  --founders-navy: #062650;
+  --founders-yellow: #f2c438;
+
+  min-height: 70vh;
+  padding: 110px 24px 70px;
+  background: linear-gradient(145deg, #3371b8, #062650 65%);
+  color: var(--founders-navy);
+  font-family: inherit;
+}
+
+.founders-page,
+.founders-page *,
+.founders-page *::before,
+.founders-page *::after {
+  box-sizing: border-box;
+}
+
+.founders-container {
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
+  
+}
+
+/* Regreso al inicio. */
+.founders-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  min-height: 44px;
+  margin-bottom: 30px;
+  padding: 10px 18px;
+
+  border: 1px solid #d4dfec;
+  border-radius: 999px;
+  background: white;
+  color: var(--founders-blue);
+
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Dos columnas del mismo ancho. */
+.founders-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+
+  overflow: hidden;
+  border: 1px solid #dce5ef;
+  border-radius: 26px;
+  background: white;
+  box-shadow: 0 16px 40px rgba(6, 38, 80, 0.08);
+}
+
+/* Fotografía. */
+.founders-photo {
+  position: relative;
+  isolation: isolate;
+  min-width: 0;
+  min-height: 650px;
+  margin: 0;
+  overflow: hidden;
+  background: #e5edf5;
+}
+
+.founders-photo img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+ 
+
+.founders-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(6, 38, 80, 0.88)
+  );
+}
+
+.founders-photo figcaption {
+  position: absolute;
+  right: 32px;
+  bottom: 36px;
+  left: 32px;
+  z-index: 1;
+
+  padding-left: 20px;
+  border-left: 4px solid var(--founders-yellow);
+  color: white;
+}
+
+.founders-photo figcaption span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--founders-yellow);
+
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.founders-photo figcaption strong {
+  display: block;
+  max-width: 420px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.6rem, 2.5vw, 2.4rem);
+  line-height: 1.25;
+}
+
+/* Historia. */
+.founders-copy {
+  min-width: 0;
+  padding: clamp(28px, 4vw, 56px);
+}
+
+.founders-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  color: var(--founders-blue);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.founders-eyebrow::before {
+  content: "";
+  flex: 0 0 46px;
+  height: 3px;
+  background: var(--founders-yellow);
+}
+
+.founders-heading h1 {
+  margin: 20px 0;
+  font-size: clamp(2.2rem, 4vw, 3.7rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.founders-heading h1 span {
+  display: block;
+  color: var(--founders-blue);
+}
+
+.founders-lead {
+  margin: 0 0 28px;
+  color: #526277;
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+
+.founders-story p {
+  margin: 0 0 20px;
+  color: #46566b;
+  font-size: 1.3rem;
+  line-height: 1.85;
+  text-align: justify;
+
+}
+
+.founders-story strong {
+  color: var(--founders-blue);
+  font-weight: 700;
+}
+
+.founders-message {
+  margin: 28px 0;
+  padding: 18px 22px;
+
+  border-left: 4px solid var(--founders-yellow);
+  border-radius: 0 12px 12px 0;
+  background: #f2f6fb;
+
+  color: var(--founders-blue);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  font-style: italic;
+  line-height: 1.7;
+}
+
+.founders-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  min-height: 48px;
+  max-width: 100%;
+  padding: 12px 20px;
+
+  border: 2px solid var(--founders-yellow);
+  border-radius: 999px;
+  background: var(--founders-blue);
+  color: white;
+
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+
+  transition:
+    transform 200ms ease,
+    background-color 200ms ease;
+}
+
+.founders-button svg {
+  flex-shrink: 0;
+}
+
+.founders-page a:focus-visible {
+  outline: 3px solid #c59619;
+  outline-offset: 4px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .founders-back:hover {
+    background: #edf3fa;
+  }
+
+  .founders-button:hover {
+    transform: translateY(-2px);
+    background: var(--founders-navy);
+  }
+}
+
+/* Tabletas y celulares: fotografía sobre el texto. */
+@media (max-width: 900px) {
+  .founders-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .founders-photo {
+    min-height: 0;
+    height: clamp(320px, 55vw, 500px);
+  }
+
+  .founders-copy {
+    padding: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .founders-page {
+    padding: 100px 18px 56px;
+  }
+
+  .founders-layout {
+    border-radius: 20px;
+  }
+
+  .founders-copy {
+    padding: 28px 22px;
+  }
+
+  .founders-heading {
+    text-align: center;
+  }
+
+  .founders-eyebrow {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-size: 0.75rem;
+  }
+
+  .founders-eyebrow::before {
+    flex: none;
+    width: 42px;
+  }
+
+  .founders-heading h1 {
+    font-size: clamp(2.1rem, 9vw, 3rem);
+   
+  }
+
+  .founders-lead {
+    font-size: 1.05rem;
+  }
+
+  .founders-photo figcaption {
+    right: 22px;
+    bottom: 26px;
+    left: 22px;
+    padding-left: 16px;
+  }
+
+  .founders-photo figcaption strong {
+    font-size: 1.7rem;
+  }
+
+  .founders-message {
+    padding: 16px 18px;
+    font-size: 1.05rem;
+  }
+
+  .founders-button {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .founders-button {
+    transition: none;
+  }
+
+  .founders-button:hover {
+    transform: none;
+  }
+}
+
+/* Fotografía compacta: no crece al desplegar la historia. */
+@media (min-width: 901px) {
+  .founders-photo {
+    align-self: stretch;
+    min-height: 580px;
+    height: auto;
+  }
+}
+
+/* Botón para desplegar la historia. */
+.founders-read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  min-height: 44px;
+  padding: 10px 20px;
+  border: 2px solid var(--founders-blue);
+  border-radius: 999px;
+
+  background: var(--founders-yellow);
+  color: var(--founders-navy);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: background-color 200ms ease;
+}
+
+.founders-read-more span {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.founders-read-more:focus-visible {
+  outline: 3px solid var(--founders-blue);
+  outline-offset: 4px;
+}
+
+.founders-full-history {
+  margin-top: 26px;
+  padding-top: 24px;
+  border-top: 1px solid #dce5ef;
+}
+
+.founders-full-history[hidden] {
+  display: none;
+}
+
+.founders-full-history h2 {
+  margin: 0 0 20px;
+  color: var(--founders-blue);
+  font-size: 1.4rem;
+  line-height: 1.35;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .founders-read-more:hover {
+    background: #ffe078;
+  }
+}
+
+@media (max-width: 600px) {
+  .founders-read-more {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .founders-read-more {
+    transition: none;
+  }
+}
+
+/* Fundadores como sección del inicio. */
+#fundadores {
+  padding-top: 60px;
+  scroll-margin-top: 24px;
+}
+
+/* El regreso al inicio no es necesario dentro de la misma página. */
+#fundadores .founders-back {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #fundadores {
+    padding-top: 44px;
+  }
+}

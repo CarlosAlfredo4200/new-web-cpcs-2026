@@ -25,6 +25,9 @@ const slides = [
 export default function HeroCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [paused, setPaused] = useState(false);
+  const [firstImageStatus, setFirstImageStatus] = useState<
+    "loading" | "ready" | "error"
+  >("loading");
   const photoRef = useRef<HTMLDivElement>(null);
 
   // Cambio automático de fotografías cada 8 segundos.
@@ -132,9 +135,7 @@ export default function HeroCarousel() {
               className={[
                 "hero-slide",
                 isActive ? "hero-slide--active" : "",
-                index % 2 === 0
-                  ? "hero-slide--grow"
-                  : "hero-slide--shrink",
+                index % 2 === 0 ? "hero-slide--grow" : "hero-slide--shrink",
               ]
                 .filter(Boolean)
                 .join(" ")}
@@ -143,15 +144,33 @@ export default function HeroCarousel() {
               <img
                 src={slide.image}
                 alt={slide.alt}
-                fetchPriority={index === 0 ? "high" : "auto"}
+                loading="eager"
+                fetchPriority={index === 0 ? "high" : "low"}
                 decoding="async"
+                onLoad={() => {
+                  if (index === 0) {
+                    setFirstImageStatus("ready");
+                  }
+                }}
+                onError={() => {
+                  if (index === 0) {
+                    setFirstImageStatus("error");
+                  }
+                }}
               />
 
-             <AdmissionsHeroEffect paused={paused || !isActive} />
+              <AdmissionsHeroEffect paused={paused || !isActive} />
             </div>
           );
         })}
       </div>
+
+      {firstImageStatus === "loading" && (
+        <div className="hero-simple-loader" role="status">
+          <span className="hero-simple-spinner" aria-hidden="true" />
+          <span>Cargando fotografía…</span>
+        </div>
+      )}
 
       <div
         className="hero-carousel-controls"
@@ -164,9 +183,7 @@ export default function HeroCarousel() {
             type="button"
             className={[
               "hero-carousel-dot",
-              index === activeIndex
-                ? "hero-carousel-dot--active"
-                : "",
+              index === activeIndex ? "hero-carousel-dot--active" : "",
             ]
               .filter(Boolean)
               .join(" ")}
@@ -184,9 +201,7 @@ export default function HeroCarousel() {
           className="hero-carousel-pause"
           aria-label={paused ? "Reanudar carrusel" : "Pausar carrusel"}
           onClick={() => setPaused((current) => !current)}
-        >
-        
-        </button>
+        ></button>
       </div>
     </>
   );

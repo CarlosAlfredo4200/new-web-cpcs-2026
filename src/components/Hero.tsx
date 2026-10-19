@@ -16,7 +16,7 @@ const logos = import.meta.glob<string>(
 const schoolLogo = Object.values(logos)[0];
 
 const quickLinks = [
-  { label: "Nuestro colegio", href: "#nuestro-colegio" },
+    { label: "Fundadores", href: "#fundadores" },
   { label: "Niveles", href: "#niveles" },
   { label: "Comunidad CPCS", href: "#comunidad" },
   { label: "Contáctanos", href: "/contacto" },

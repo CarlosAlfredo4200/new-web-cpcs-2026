@@ -555,3 +555,51 @@
 .hero-admissions-art {
   scale: 0.6;
 }
+
+.hero-simple-loader {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  padding: 20px 26px;
+  border-radius: 16px;
+  background: #1c4473;
+  color: white;
+  font-size: 0.95rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.hero-simple-spinner {
+  width: 44px;
+  height: 44px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #f2c438;
+  border-radius: 50%;
+  animation: hero-simple-spin 800ms linear infinite;
+}
+
+@keyframes hero-simple-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-simple-loader {
+    left: 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-simple-spinner {
+    animation: none;
+  }
+}

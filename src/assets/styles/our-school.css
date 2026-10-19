@@ -65,6 +65,7 @@
 
 .school-heading h1 span {
     color: var(--school-blue);
+    
 }
 
 .school-heading>p {
@@ -334,6 +335,7 @@
 /* Menú desplegable: click, teclado y pantallas táctiles. */
 .school-menu {
     position: relative;
+    
 }
 
 .school-menu-toggle {
@@ -348,8 +350,10 @@
     color: inherit;
     font-family: inherit;
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: 200;
     cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .school-menu-toggle--active {

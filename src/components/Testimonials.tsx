@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import "../assets/styles/testimonials.css";
 import familyImage from "../assets/images/base_familia.png";
+import { MdFamilyRestroom } from "react-icons/md";
 
 const testimonials = [
   {
@@ -26,64 +27,62 @@ const testimonials = [
 export default function Testimonials() {
   const sectionRef = useRef<HTMLElement>(null);
 
-useEffect(() => {
-  const section = sectionRef.current;
+  useEffect(() => {
+    const section = sectionRef.current;
 
-  if (!section || !("IntersectionObserver" in window)) return;
+    if (!section || !("IntersectionObserver" in window)) return;
 
-  const cards = Array.from(
-    section.querySelectorAll<HTMLElement>(".testimonial-card"),
-  );
-
-  const preference = window.matchMedia(
-    "(prefers-reduced-motion: reduce)",
-  );
-
-  let observer: IntersectionObserver | undefined;
-
-  const configure = () => {
-    observer?.disconnect();
-
-    cards.forEach((card) => {
-      card.classList.remove("testimonial-card--pending");
-    });
-
-    if (preference.matches) return;
-
-    observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          // Repite la entrada al salir y regresar a la tarjeta.
-          entry.target.classList.toggle(
-            "testimonial-card--pending",
-            !entry.isIntersecting,
-          );
-        });
-      },
-      {
-        threshold: 0,
-        rootMargin: "0px 0px -50px 0px",
-      },
+    const cards = Array.from(
+      section.querySelectorAll<HTMLElement>(".testimonial-card"),
     );
 
-    cards.forEach((card) => {
-      card.classList.add("testimonial-card--pending");
-      observer?.observe(card);
-    });
-  };
+    const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-  configure();
-  preference.addEventListener("change", configure);
+    let observer: IntersectionObserver | undefined;
 
-  return () => {
-    observer?.disconnect();
-    preference.removeEventListener("change", configure);
+    const configure = () => {
+      observer?.disconnect();
 
-    cards.forEach((card) => {
-      card.classList.remove("testimonial-card--pending");
-    });
-  };
-}, []);
+      cards.forEach((card) => {
+        card.classList.remove("testimonial-card--pending");
+      });
+
+      if (preference.matches) return;
+
+      observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            // Repite la entrada al salir y regresar a la tarjeta.
+            entry.target.classList.toggle(
+              "testimonial-card--pending",
+              !entry.isIntersecting,
+            );
+          });
+        },
+        {
+          threshold: 0,
+          rootMargin: "0px 0px -50px 0px",
+        },
+      );
+
+      cards.forEach((card) => {
+        card.classList.add("testimonial-card--pending");
+        observer?.observe(card);
+      });
+    };
+
+    configure();
+    preference.addEventListener("change", configure);
+
+    return () => {
+      observer?.disconnect();
+      preference.removeEventListener("change", configure);
+
+      cards.forEach((card) => {
+        card.classList.remove("testimonial-card--pending");
+      });
+    };
+  }, []);
 
   return (
     <section
@@ -150,8 +149,13 @@ useEffect(() => {
               </div>
 
               <div className="testimonial-body">
-                <span className="testimonial-mark" aria-hidden="true">
-                  “
+                <span
+                  className="testimonial-mark testimonial-mark--family"
+                  aria-hidden="true"
+                >
+                  <MdFamilyRestroom  
+                  color="#ffd106"
+                  fontSize={42} />
                 </span>
 
                 <p className="testimonial-text">{testimonial.text}</p>
