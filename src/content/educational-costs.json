@@ -71,6 +71,7 @@
       "otrosCobros": 70000,
       "totalReportado": 6386622
     },
+
     {
       "estrato": 1,
       "grado": "Décimo",
@@ -119,6 +120,7 @@
       "otrosCobros": 70000,
       "totalReportado": 6687414
     },
+
     {
       "estrato": 1,
       "grado": "Noveno",
@@ -167,6 +169,7 @@
       "otrosCobros": 70000,
       "totalReportado": 7089439
     },
+
     {
       "estrato": 1,
       "grado": "Octavo",
@@ -215,6 +218,7 @@
       "otrosCobros": 70000,
       "totalReportado": 7042054
     },
+
     {
       "estrato": 1,
       "grado": "Séptimo",
@@ -263,6 +267,7 @@
       "otrosCobros": 70000,
       "totalReportado": 7437204
     },
+
     {
       "estrato": 1,
       "grado": "Sexto",
@@ -311,6 +316,7 @@
       "otrosCobros": 70000,
       "totalReportado": 7710887
     },
+
     {
       "estrato": 1,
       "grado": "Quinto",
@@ -359,6 +365,7 @@
       "otrosCobros": 70000,
       "totalReportado": 7811527
     },
+
     {
       "estrato": 1,
       "grado": "Cuarto",
@@ -407,6 +414,7 @@
       "otrosCobros": 70000,
       "totalReportado": 8088531
     },
+
     {
       "estrato": 1,
       "grado": "Tercero",
@@ -455,6 +463,7 @@
       "otrosCobros": 70000,
       "totalReportado": 8470366
     },
+
     {
       "estrato": 1,
       "grado": "Segundo",
@@ -503,6 +512,7 @@
       "otrosCobros": 70000,
       "totalReportado": 8832828
     },
+
     {
       "estrato": 1,
       "grado": "Primero",
@@ -551,141 +561,144 @@
       "otrosCobros": 70000,
       "totalReportado": 8579252
     },
+
     {
       "estrato": 1,
       "grado": "Transición",
-      "matricula": 6648131,
-      "pensionMensual": 664813,
-      "otrosCobros": 598332,
-      "totalReportado": 13229781
+      "matricula": 664813,
+      "pensionMensual": 598332,
+      "otrosCobros": 70000,
+      "totalReportado": 6648131
     },
     {
       "estrato": 2,
       "grado": "Transición",
-      "matricula": 7097332,
-      "pensionMensual": 709733,
-      "otrosCobros": 638760,
-      "totalReportado": 14123690
+      "matricula": 709733,
+      "pensionMensual": 638760,
+      "otrosCobros": 70000,
+      "totalReportado": 7097332
     },
     {
       "estrato": 3,
       "grado": "Transición",
-      "matricula": 7546528,
-      "pensionMensual": 754653,
-      "otrosCobros": 679188,
-      "totalReportado": 15017592
+      "matricula": 754653,
+      "pensionMensual": 679188,
+      "otrosCobros": 70000,
+      "totalReportado": 7546528
     },
     {
       "estrato": 4,
       "grado": "Transición",
-      "matricula": 7995727,
-      "pensionMensual": 799573,
-      "otrosCobros": 719615,
-      "totalReportado": 15911496
+      "matricula": 799573,
+      "pensionMensual": 719615,
+      "otrosCobros": 70000,
+      "totalReportado": 7995727
     },
     {
       "estrato": 5,
       "grado": "Transición",
-      "matricula": 8444924,
-      "pensionMensual": 844492,
-      "otrosCobros": 760043,
-      "totalReportado": 16805398
+      "matricula": 844492,
+      "pensionMensual": 760043,
+      "otrosCobros": 70000,
+      "totalReportado": 8444924
     },
     {
       "estrato": 6,
       "grado": "Transición",
-      "matricula": 8894126,
-      "pensionMensual": 889413,
-      "otrosCobros": 800471,
-      "totalReportado": 17699310
+      "matricula": 889413,
+      "pensionMensual": 800471,
+      "otrosCobros": 70000,
+      "totalReportado": 8894126
     },
+
     {
       "estrato": 1,
       "grado": "Jardín",
-      "matricula": 6866671,
-      "pensionMensual": 686667,
-      "otrosCobros": 618000,
-      "totalReportado": 13664675
+      "matricula": 686667,
+      "pensionMensual": 618000,
+      "otrosCobros": 70000,
+      "totalReportado": 6866671
     },
     {
       "estrato": 2,
       "grado": "Jardín",
-      "matricula": 7330637,
-      "pensionMensual": 733064,
-      "otrosCobros": 659757,
-      "totalReportado": 14587967
+      "matricula": 733064,
+      "pensionMensual": 659750,
+      "otrosCobros": 70000,
+      "totalReportado": 7330637
     },
     {
       "estrato": 3,
       "grado": "Jardín",
-      "matricula": 7794600,
-      "pensionMensual": 779460,
-      "otrosCobros": 701514,
-      "totalReportado": 15511254
+      "matricula": 779460,
+      "pensionMensual": 701514,
+      "otrosCobros": 70000,
+      "totalReportado": 7794600
     },
     {
       "estrato": 4,
       "grado": "Jardín",
-      "matricula": 8258565,
-      "pensionMensual": 825856,
-      "otrosCobros": 743271,
-      "totalReportado": 16434544
+      "matricula": 825856,
+      "pensionMensual": 743271,
+      "otrosCobros": 70000,
+      "totalReportado": 8258565
     },
     {
       "estrato": 5,
       "grado": "Jardín",
-      "matricula": 8722528,
-      "pensionMensual": 872253,
-      "otrosCobros": 785027,
-      "totalReportado": 17357830
+      "matricula": 872253,
+      "pensionMensual": 785027,
+      "otrosCobros": 70000,
+      "totalReportado": 8722528
     },
     {
       "estrato": 6,
       "grado": "Jardín",
-      "matricula": 9186496,
-      "pensionMensual": 918650,
-      "otrosCobros": 826785,
-      "totalReportado": 18281127
+      "matricula": 918650,
+      "pensionMensual": 826785,
+      "otrosCobros": 70000,
+      "totalReportado": 9186496
     },
+
     {
       "estrato": 1,
       "grado": "Prejardín",
-      "matricula": 8122583,
-      "pensionMensual": 812258,
-      "otrosCobros": 731032,
-      "totalReportado": 16163940
+      "matricula": 812258,
+      "pensionMensual": 731032,
+      "otrosCobros": 70000,
+      "totalReportado": 8122583
     },
     {
       "estrato": 2,
       "grado": "Prejardín",
-      "matricula": 8671409,
-      "pensionMensual": 867141,
-      "otrosCobros": 780427,
-      "totalReportado": 17256104
+      "matricula": 867141,
+      "pensionMensual": 780427,
+      "otrosCobros": 70000,
+      "totalReportado": 8671409
     },
     {
       "estrato": 3,
       "grado": "Prejardín",
-      "matricula": 9220230,
-      "pensionMensual": 922023,
-      "otrosCobros": 829821,
-      "totalReportado": 18348258
+      "matricula": 922023,
+      "pensionMensual": 829821,
+      "otrosCobros": 70000,
+      "totalReportado": 9220230
     },
     {
       "estrato": 4,
       "grado": "Prejardín",
-      "matricula": 9769054,
-      "pensionMensual": 976905,
-      "otrosCobros": 879215,
-      "totalReportado": 19440417
+      "matricula": 976905,
+      "pensionMensual": 879215,
+      "otrosCobros": 70000,
+      "totalReportado": 9769054
     },
     {
       "estrato": 5,
       "grado": "Prejardín",
-      "matricula": 10317875,
-      "pensionMensual": 1031788,
-      "otrosCobros": 928609,
-      "totalReportado": 20532572
+      "matricula": 1031788,
+      "pensionMensual": 928609,
+      "otrosCobros": 70000,
+      "totalReportado": 10317875
     }
   ]
 }
