@@ -156,7 +156,7 @@ export default function AdmissionsPromo() {
                 controls
                 playsInline
                 preload="none"
-                 poster="/src/assets/images/portada-admisiones.jpg.png"
+                poster="/videos/portada-admisiones.png"
                 aria-label="Video institucional de admisiones"
               >
                 <source
