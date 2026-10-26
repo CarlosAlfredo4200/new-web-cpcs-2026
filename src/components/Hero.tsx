@@ -38,7 +38,7 @@ export default function Hero() {
 
         <p className="hero-slogan">
           "Formar líderes que sean testimonio de vida y de educación
-          Cristocéntrica para Colombia y las naciones"
+          Cristocéntrica para Colombia y Las Naciones"
         </p>
 
         {schoolLogo ? (

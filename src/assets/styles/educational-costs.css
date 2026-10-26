@@ -266,7 +266,7 @@
   padding: 16px 20px;
   text-align: left;
   color: #526277;
-  font-size: .85rem;
+  font-size: 1.3rem;
 }
 
 .costs-table thead {
@@ -365,13 +365,13 @@
 
 .costs-contact h2 {
   margin: 0 0 10px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .costs-contact p {
   margin: 0;
   line-height: 1.7;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .costs-contact>a {

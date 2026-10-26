@@ -184,7 +184,7 @@
 
 .academic-schedule span {
   color: #526277;
-  font-size: 0.85rem;
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 
@@ -201,6 +201,7 @@
   padding-left: 20px;
   color: #405169;
   line-height: 1.9;
+  font-size: 1.2rem;
 }
 
 /* Entrada al hacer scroll. */

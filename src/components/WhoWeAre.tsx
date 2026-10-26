@@ -21,7 +21,7 @@ export default function WhoWeAre() {
         <header className="school-heading">
           <span className="school-eyebrow">Nuestro colegio</span>
           <h1>Un propósito que nos une</h1>
-          <p>Conoce quiénes somos y el camino que dio vida a nuestra comunidad educativa.</p>
+          
         </header>
 
         <section className="school-split" aria-labelledby="school-identity-title">

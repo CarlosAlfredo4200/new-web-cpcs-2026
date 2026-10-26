@@ -21,13 +21,13 @@ const levels = [
     title: "Preescolar",
     image: preschoolImage,
     alt: "Estudiantes de preescolar del colegio",
-    schedule: "7:00 a. m. – 12:30 p. m.",
+    schedule: "7:00 a. m. – 1:00 p. m.",
     day: "Jornada de la mañana",
     details: ["Pre-Jardín: 3 años", "Jardín: 4 años", "Transición: 5 años"],
   },
   {
     number: "02",
-    title: "Básica primaria",
+    title: "Básica Primaria",
     image: primaryImage,
     alt: "Estudiantes de básica primaria del colegio",
     schedule: "7:00 a. m. – 1:00 p. m.",
@@ -36,7 +36,7 @@ const levels = [
   },
   {
     number: "03",
-    title: "Básica secundaria y media académica",
+    title: "Básica Secundaria y Media Académica",
     image: secondaryImage,
     alt: "Estudiantes de secundaria y media del colegio",
     schedule: "7:00 a. m. – 3:00 p. m.",
@@ -87,7 +87,7 @@ export default function AcademicLevels() {
     >
       <div className="levels-container">
         <header className="levels-heading">
-          <span className="levels-eyebrow">Nuestra propuesta educativa</span>
+          <span className="levels-eyebrow">Nuestra Propuesta Educativa</span>
 
           <div className="levels-title-row">
             <svg
@@ -114,7 +114,7 @@ export default function AcademicLevels() {
             </svg>
 
             <h1 id="levels-heading">
-              Niveles  académicos 
+              Niveles  Académicos 
             </h1>
           </div>
 

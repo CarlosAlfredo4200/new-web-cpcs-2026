@@ -30,8 +30,8 @@ export default function Footer() {
           <div>
             <h2>Colegio Panamericano Colombo Sueco</h2>
             <p>
-              Despierta, refuerza y ensancha
-              nuevas cosas DIOS hará. ISAÍAS 43:19
+              Despierta, Refuerza y Ensancha
+              Nuevas Cosas DIOS Hará. ISAÍAS 43:19
             </p>
           </div>
         </div>
@@ -49,7 +49,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-info">
-          <h3>Horario de atención</h3>
+          <h3>Horario de Atención</h3>
 
           <p>
             <strong>Lunes a jueves</strong>

@@ -1,0 +1,431 @@
+.admissions-promo {
+  --promo-navy: #062650;
+  --promo-blue: #1c4473;
+  --promo-yellow: #f2c438;
+
+  position: relative;
+  isolation: isolate;
+  overflow-x: clip;
+
+  padding: clamp(40px, 5vw, 72px) 24px;
+  background: white;
+  color: var(--promo-navy);
+}
+
+.admissions-promo,
+.admissions-promo *,
+.admissions-promo *::before,
+.admissions-promo *::after {
+  box-sizing: border-box;
+}
+
+/* Fondo escolar tenue. */
+.admissions-promo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  background-image: url("../images/fondo-escolar.jpg");
+  background-repeat: repeat;
+  background-size: 340px auto;
+
+  opacity: 0.09;
+}
+
+.admissions-promo-container {
+  width: 100%;
+  max-width: 1320px;
+  margin-inline: auto;
+}
+
+/* Encabezado. */
+.admissions-promo-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  margin: 0 0 34px;
+  text-align: center;
+}
+
+.admissions-promo-icon {
+  display: block;
+  flex: 0 0 auto;
+  width: clamp(50px, 6vw, 80px);
+  height: auto;
+  color: #bf9017;
+}
+
+.admissions-promo-heading h2 {
+  min-width: 0;
+  margin: 0;
+
+  color: var(--promo-navy);
+  font-family: inherit;
+  font-size: clamp(2rem, 4.1vw, 3.6rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+  overflow-wrap: anywhere;
+}
+
+.admissions-promo-heading h2 span {
+  display: inline-block;
+  color: var(--promo-blue);
+}
+
+/* Imagen a la izquierda y video a la derecha. */
+.admissions-promo-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 430px);
+  align-items: start;
+  gap: clamp(28px, 3vw, 48px);
+}
+
+.admissions-promo-visual,
+.admissions-promo-video-column {
+  min-width: 0;
+}
+
+/* Imagen centrada y completa. */
+.admissions-promo-image {
+  width: 85%;
+  margin: 0 auto;
+  overflow: hidden;
+
+  border-radius: 22px;
+  background: white;
+  box-shadow: 0 12px 30px rgba(6, 38, 80, 0.1);
+}
+
+.admissions-promo-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Tarjeta parcialmente superpuesta. */
+.admissions-promo-card {
+  position: relative;
+  z-index: 1;
+
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  align-items: center;
+  gap: 12px 24px;
+
+  width: 82%;
+  margin: -76px 0 0 auto;
+  padding: clamp(10px, 2vw, 20px);
+
+  border: 1px solid var(--promo-yellow);
+  border-radius: 18px;
+  background: white;
+
+  box-shadow: 0 12px 28px rgba(6, 38, 80, 0.14);
+}
+
+.admissions-promo-card-heading,
+.admissions-promo-copy {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.admissions-promo-school {
+  display: block;
+  margin-bottom: 10px;
+
+  color: var(--promo-blue);
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.admissions-promo-card h3 {
+  margin: 0;
+
+  color: var(--promo-navy);
+  font-family: inherit;
+  font-size: clamp(1.5rem, 2.2vw, 2.1rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+.admissions-promo-card h3 span,
+.admissions-promo-card h3 strong {
+  display: block;
+}
+
+.admissions-promo-card h3 strong {
+  margin-top: 6px;
+  color: #a77a08;
+  font-size: clamp(2.8rem, 4vw, 4rem);
+  line-height: 1;
+}
+
+.admissions-promo-subtitle {
+  margin: 0 0 10px;
+  color: var(--promo-navy);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.admissions-promo-description {
+  margin: 0 0 16px;
+  color: var(--promo-navy);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Botón. */
+.admissions-promo-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100%;
+  min-height: 46px;
+  padding: 11px 15px;
+
+  border: 2px solid var(--promo-yellow);
+  border-radius: 999px;
+  background: var(--promo-yellow);
+
+  color: var(--promo-navy);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+
+  transition:
+    transform 1180ms ease,
+    background-color 180ms ease;
+}
+
+.admissions-promo-button > span:last-child {
+  flex-shrink: 0;
+}
+
+.admissions-promo-button:focus-visible {
+  outline: 3px solid var(--promo-blue);
+  outline-offset: 4px;
+}
+
+.admissions-promo-welcome {
+  grid-column: 1 / -1;
+
+  margin: 0;
+  color: var(--promo-navy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Video vertical con marco amarillo. */
+.admissions-promo-phone {
+  position: relative;
+
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+
+  border: 10px solid var(--promo-yellow);
+  border-radius: 36px;
+  background: var(--promo-navy);
+   
+
+  box-shadow: 0 14px 32px rgba(6, 38, 80, 0.16);
+}
+
+.admissions-promo-video {
+  position: absolute;
+  inset: 0;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  background: var(--promo-navy);
+}
+
+/* Animaciones independientes al aparecer en pantalla. */
+.admissions-promo [data-promo-reveal] {
+  opacity: 1;
+  transform: none;
+
+  transition:
+    opacity 750ms ease,
+    transform 2000ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.admissions-promo
+  .admissions-promo-video-column[data-promo-reveal] {
+  transition-delay: 120ms;
+}
+
+.admissions-promo
+  .admissions-promo-card[data-promo-reveal] {
+  transition-delay: 200ms;
+}
+
+/* Imagen y video desde la izquierda. */
+.admissions-promo
+  [data-promo-reveal="left"].promo-reveal--pending {
+  opacity: 0;
+  transform: translateX(-64px);
+}
+
+/* Tarjeta desde abajo. */
+.admissions-promo
+  [data-promo-reveal="bottom"].promo-reveal--pending {
+  opacity: 0;
+  transform: translateY(44px);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .admissions-promo-button:hover {
+    transform: translateY(-2px);
+    background: #ffdb62;
+  }
+}
+
+/* Tabletas grandes. */
+@media (min-width: 901px) and (max-width: 1150px) {
+  .admissions-promo-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 280px);
+    gap: 24px;
+  }
+
+  .admissions-promo-image {
+    width: 100%;
+  }
+
+  .admissions-promo-card {
+    width: 94%;
+    gap: 12px 18px;
+    padding: 22px;
+  }
+}
+
+/* Tabletas pequeñas y móviles. */
+@media (max-width: 900px) {
+  .admissions-promo-layout {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+    margin-inline: auto;
+    gap: 32px;
+  }
+
+  .admissions-promo-image {
+    width: 100%;
+  }
+
+  .admissions-promo-video-column {
+    width: min(100%, 340px);
+    margin-inline: auto;
+  }
+
+  .admissions-promo-card {
+    width: 92%;
+    margin: -30px 0 0 auto;
+  }
+
+  /* Recorridos más cortos en pantallas pequeñas. */
+  .admissions-promo
+    [data-promo-reveal="left"].promo-reveal--pending {
+    transform: translateX(-28px);
+  }
+
+  .admissions-promo
+    [data-promo-reveal="bottom"].promo-reveal--pending {
+    transform: translateY(28px);
+  }
+
+  .admissions-promo
+    .admissions-promo-video-column[data-promo-reveal],
+  .admissions-promo
+    .admissions-promo-card[data-promo-reveal] {
+    transition-delay: 60ms;
+  }
+}
+
+/* Celulares. */
+@media (max-width: 600px) {
+  .admissions-promo {
+    padding: 40px 16px;
+  }
+
+  .admissions-promo-heading {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 26px;
+  }
+
+  .admissions-promo-icon {
+    width: 56px;
+  }
+
+  .admissions-promo-heading h2 {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+  }
+
+  .admissions-promo-image {
+    border-radius: 18px;
+  }
+
+  .admissions-promo-card {
+    grid-template-columns: 1fr;
+    gap: 18px;
+
+    width: 94%;
+    margin: -18px auto 0;
+    padding: 24px 20px;
+    text-align: center;
+  }
+
+  .admissions-promo-subtitle {
+    font-size: clamp(1.15rem, 5vw, 1.4rem);
+  }
+
+  .admissions-promo-description {
+    font-size: 1rem;
+  }
+
+  .admissions-promo-welcome {
+    grid-column: auto;
+  }
+}
+
+/* Accesibilidad: desactiva el movimiento si el usuario lo solicita. */
+@media (prefers-reduced-motion: reduce) {
+  .admissions-promo [data-promo-reveal],
+  .admissions-promo
+    [data-promo-reveal].promo-reveal--pending {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    transition-delay: 0ms;
+  }
+
+  .admissions-promo-button {
+    transition: none;
+  }
+
+  .admissions-promo-button:hover {
+    transform: none;
+  }
+}

@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import WhatsAppWidget from "./components/WhatsAppWidget";
 import Founders from "./components/Founders";
 import EducationalCosts from "./components/EducationalCosts";
+import AdmissionsPromo from "./components/AdmissionsPromo";
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
           element={
             <main>
               <Hero />
+              <AdmissionsPromo />
               <AcademicLevels />
               <MissionWork />
               <Testimonials />

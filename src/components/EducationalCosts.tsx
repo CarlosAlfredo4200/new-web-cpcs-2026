@@ -34,7 +34,7 @@ export default function EducationalCosts() {
         <header className="costs-heading">
           <div className="costs-title">
             <FiBookOpen aria-hidden="true" />
-            <h1>Costos educativos</h1>
+            <h1>Costos Educativos</h1>
           </div>
           <p className="costs-resolution">
             Liquidación tarifas año {costs.anio} según Resolución{" "}
@@ -49,7 +49,7 @@ export default function EducationalCosts() {
         <section className="costs-filters" aria-labelledby="costs-filter-title">
           <div className="costs-filter-heading">
             <FiFilter aria-hidden="true" />
-            <h2 id="costs-filter-title">Encuentra tu tarifa</h2>
+            <h2 id="costs-filter-title">Encuentra Tu Tarifa</h2>
           </div>
           <div className="costs-filter-grid">
             <fieldset className="costs-strata">
@@ -100,7 +100,7 @@ export default function EducationalCosts() {
           aria-labelledby="costs-results-title"
         >
           <div className="costs-results-heading">
-            <h2 id="costs-results-title">Tarifas {costs.anio}</h2>
+            <h2 id="costs-results-title">TARIFAS {costs.anio}</h2>
             <p role="status">
               {filtered.length}{" "}
               {filtered.length === 1 ? "resultado" : "resultados"}
@@ -162,7 +162,7 @@ export default function EducationalCosts() {
         </section>
         <aside className="costs-contact">
           <div>
-            <h2>Conoce nuestros beneficios económicos</h2>
+            <h2>Conoce Nuestros Beneficios Económicos</h2>
             <p>
               Consulta con Tesorería los beneficios sobre
               pensiones, otros beneficios y sus condiciones.

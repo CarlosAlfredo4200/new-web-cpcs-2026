@@ -97,9 +97,10 @@
 
 .school-copy p {
     margin: 0 0 20px;
-    font-size: clamp(1rem, 1.2vw, 1.12rem);
     line-height: 1.85;
     color: #46566b;
+    font-size: clamp(1.3rem, 1.6vw, 1.12rem);
+    text-align: justify;
 }
 
 .school-button {
@@ -237,7 +238,7 @@
 
 .school-timeline p {
     color: #526277;
-    font-size: .95rem;
+    font-size: 1.3rem;
     line-height: 1.7;
 }
 

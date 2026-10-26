@@ -26,7 +26,7 @@ export default function Founders() {
 
             <figcaption>
               <span>Nuestras raíces</span>
-              <strong>Una historia de fe y propósito</strong>
+              <strong>Una Historia De Fe y Propósito</strong>
             </figcaption>
           </figure>
 
@@ -37,7 +37,7 @@ export default function Founders() {
               </span>
 
               <h2 id="founders-title">
-                Nuestros fundadores
+                Nuestros Fundadores
               </h2>
 
               <p className="founders-lead">
@@ -49,7 +49,7 @@ export default function Founders() {
             <div className="founders-story">
               <p>
                 El Colegio Panamericano Colombosueco nació de una
-                visión de educación cristiana impulsada en 1990 por
+                visión de educación CRISTIANA impulsada en 1990 por
                 la pastora Marilyn Finke y Noemí Mendieta. Con el
                 liderazgo de los pastores Roberto y Marilyn Finke
                 y un equipo interdisciplinario, abrió sus puertas

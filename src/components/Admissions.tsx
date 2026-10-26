@@ -10,22 +10,22 @@ const admissionsLinks = {
 const values = [
   {
     icon: "✝",
-    title: "Valores y fe",
+    title: "Valores y Fe",
     description: "Formación fundamentada en la Palabra de Dios.",
   },
   {
     icon: "🎓",
-    title: "Excelencia académica",
+    title: "Excelencia Académica",
     description: "Aprendizaje acompañado de esfuerzo y disciplina.",
   },
   {
     icon: "🤝",
-    title: "Disciplina y respeto",
+    title: "Disciplina y Respeto",
     description: "Valores que fortalecen la convivencia.",
   },
   {
     icon: "🌱",
-    title: "Formación integral",
+    title: "Formación Integral",
     description: "Acompañamiento para crecer con propósito.",
   },
 ];
@@ -104,7 +104,7 @@ export default function Admissions() {
           <div className="admissions-copy">
             <span className="admissions-year">Año académico 2027</span>
 
-            <h2>Formación integral con propósito</h2>
+            <h2>Formación Integral Con Propósito</h2>
 
             <p>
               Acompañamos a familias que buscan una educación con excelencia
@@ -137,7 +137,7 @@ export default function Admissions() {
           >
             <span className="admissions-card-label">Estudiantes nuevos</span>
 
-            <h2 id="admissions-new-title">Comienza tu camino con nosotros</h2>
+            <h2 id="admissions-new-title">Comienza Tu Camino Con Nosotros</h2>
 
             <p>
               Si tu hijo o hija ingresa por primera vez al colegio, inicia el
@@ -161,7 +161,7 @@ export default function Admissions() {
           >
             <span className="admissions-card-label">Estudiantes antiguos</span>
 
-            <h2 id="admissions-returning-title">Sigamos creciendo juntos</h2>
+            <h2 id="admissions-returning-title">Sigamos Creciendo Juntos</h2>
 
             <p>
               Si tu hijo o hija ya hace parte de nuestra comunidad, realiza la

@@ -15,8 +15,7 @@ export default function MissionVision() {
         <header className="school-heading">
           <span className="school-eyebrow">Nuestro colegio</span>
           <h1>Lo que nos inspira.</h1>
-          <p>Nuestra misión y visión orientan la formación y el servicio de nuestra comunidad.</p>
-        </header>
+             </header>
         <section className="school-split school-mission" aria-labelledby="school-mission-title">
           <div className="school-copy">
             <span className="school-eyebrow">Nuestro propósito</span>
