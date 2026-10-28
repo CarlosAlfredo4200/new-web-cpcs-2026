@@ -208,9 +208,9 @@
 }
 
 .mission-description p {
-  margin: 0 0 18px;
+  margin: 0 0 8px;
   color: #465366;
-  font-size: clamp(1rem, 1.3vw, 1.1rem);
+  font-size: clamp(1.4rem, 1.6vw, 1.1rem);
   line-height: 1.85;
   text-align: justify;
 }
@@ -245,7 +245,7 @@
   border-radius: 999px;
   background: #fffdf6;
   color: var(--mission-blue);
-  font-size: 0.8rem;
+  font-size: 1.3rem;
 }
 
 /* Estado normal: contenido visible. */
@@ -402,5 +402,136 @@
     transform: none;
     transition: none;
     transition-delay: 0ms;
+  }
+}
+
+/* Cabecera y enlace de regreso. */
+.mission-top {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto clamp(40px, 5vw, 65px);
+}
+
+.mission-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  min-height: 44px;
+  max-width: 100%;
+  padding: 11px 18px;
+
+  border: 1px solid var(--mission-blue, #0a3d78);
+  border-radius: 999px;
+
+  background: white;
+  color: var(--mission-blue, #0a3d78);
+
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+
+  transition:
+    background-color 200ms ease,
+    color 200ms ease,
+    transform 200ms ease;
+}
+
+.mission-back svg {
+  flex-shrink: 0;
+  width: 19px;
+  height: 19px;
+}
+
+.mission-back:focus-visible {
+  outline: 3px solid var(--mission-blue, #0a3d78);
+  outline-offset: 4px;
+}
+
+.mission-page-heading {
+  max-width: 850px;
+  margin: 35px auto 0;
+  text-align: center;
+}
+
+.mission-page-eyebrow {
+  display: inline-block;
+
+  color: var(--mission-blue, #0a3d78);
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.mission-page-heading h2 {
+  margin: 16px 0 20px;
+
+  color: #062650;
+  font-family: inherit;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.mission-page-heading h2 span {
+  color: var(--mission-blue, #0a3d78);
+}
+
+.mission-page-heading > p {
+  max-width: 650px;
+  margin: 0 auto;
+
+  color: #465366;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1.8;
+}
+
+.mission-heading .mission-content-title {
+  margin: 18px 0;
+
+  color: #062650;
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .mission-back:hover {
+    transform: translateY(-2px);
+    background: var(--mission-blue, #0a3d78);
+    color: white;
+  }
+}
+
+@media (max-width: 600px) {
+  .mission-page-heading {
+    margin-top: 28px;
+  }
+
+  .mission-page-eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+  }
+
+  .mission-back {
+    font-size: 0.85rem;
+    padding-inline: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mission-back {
+    transition: none;
+  }
+
+  .mission-back:hover {
+    transform: none;
   }
 }

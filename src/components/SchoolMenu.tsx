@@ -151,6 +151,20 @@ export default function SchoolMenu({ onNavigate }: SchoolMenuProps) {
           </Link>
         </li>
         
+        <li>
+          <Link
+            to="/nuestro-colegio/misioneros"
+            onClick={handleNavigate}
+            aria-current={
+              location.pathname === "/nuestro-colegio/misioneros"
+                ? "page"
+                : undefined
+            }
+          >
+            Obra Misionera
+          </Link>
+        </li>
+        
 
       
       </ul>

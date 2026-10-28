@@ -1,7 +1,9 @@
 import { useEffect, useRef } from "react";
 import "../assets/styles/testimonials.css";
 import familyImage from "../assets/images/base_familia.png";
+import familyTwo from "../assets/images/familia_2.jpeg";
 import { MdFamilyRestroom } from "react-icons/md";
+
 
 const testimonials = [
   {
@@ -12,9 +14,9 @@ const testimonials = [
   },
   {
     id: 2,
-    label: "Familia — pendiente",
-    text: "Espacio reservado para un testimonio autorizado de nuestra comunidad educativa.",
-    image: familyImage,
+    label: "Familia Pérez Botero",
+    text: "El colegio significa para nuestra familia la oportunidad de ver crecer a nuestras hijas en conocimiento, carácter y fe, aprendiendo que primero debemos ser antes que hacer. Valoramos una formación académica cimentada en principios cristocéntricos, que nos inspira a construir un legado de fe y amor para las futuras generaciones, formando líderes de testimonio de vida para las naciones.",
+    image: familyTwo,
   },
   {
     id: 3,
@@ -162,9 +164,7 @@ export default function Testimonials() {
 
                 <h3 id={`family-${testimonial.id}`}>{testimonial.label}</h3>
 
-                <p className="testimonial-status">
-                  Contenido pendiente de aprobación
-                </p>
+                
               </div>
             </article>
           ))}

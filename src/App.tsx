@@ -14,6 +14,7 @@ import WhatsAppWidget from "./components/WhatsAppWidget";
 import Founders from "./components/Founders";
 import EducationalCosts from "./components/EducationalCosts";
 import AdmissionsPromo from "./components/AdmissionsPromo";
+import MissionsChallenge from "./components/MissionsChallenge";
 
 export default function App() {
   return (
@@ -28,7 +29,8 @@ export default function App() {
               <Hero />
               <AdmissionsPromo />
               <AcademicLevels />
-              <MissionWork />
+              <MissionsChallenge />
+             
               <Testimonials />
               <Founders />
             </main>
@@ -52,6 +54,10 @@ export default function App() {
         <Route
           path="/nuestro-colegio/mision-vision"
           element={<MissionVision />}
+        />
+        <Route
+          path="/nuestro-colegio/misioneros"
+          element={<MissionWork />}
         />
 
         <Route

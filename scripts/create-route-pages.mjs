@@ -11,6 +11,7 @@ const routes = [
   "costos-educativos",
   "nuestro-colegio/quienes-somos",
   "nuestro-colegio/mision-vision",
+  "nuestro-colegio/misioneros",
 ];
 
 const html = await readFile(

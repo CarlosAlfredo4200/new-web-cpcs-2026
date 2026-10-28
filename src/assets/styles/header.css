@@ -387,3 +387,51 @@
   }
 }
 
+/* Submenú Nuestro colegio: independiente de la página abierta. */
+.header-nav .school-submenu a {
+  display: block;
+  padding: 12px 14px;
+  border-radius: 10px;
+
+  background: transparent;
+  color: #1c4473;
+
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+
+  transform: none;
+
+  transition:
+    color 200ms ease,
+    background-color 200ms ease;
+}
+
+/* Evita heredar las líneas y el fondo del menú principal. */
+.header-nav .school-submenu a::before,
+.header-nav .school-submenu a::after {
+  content: none;
+}
+
+/* Enlace seleccionado, mouse y teclado. */
+.header-nav .school-submenu a[aria-current="page"],
+.header-nav .school-submenu a[aria-current="location"],
+.header-nav .school-submenu a:hover,
+.header-nav .school-submenu a:focus-visible {
+  background: #fff5cc;
+  color: #062650;
+  transform: none;
+}
+
+.header-nav .school-submenu a:focus-visible {
+  outline: 2px solid #1c4473;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-nav .school-submenu a {
+    transition: none;
+  }
+}

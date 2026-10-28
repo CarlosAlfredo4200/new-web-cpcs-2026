@@ -81,7 +81,7 @@
 
 .testimonial-body {
   position: relative;
-  padding: 62px 28px 30px;
+  padding: 42px 28px 30px;
   text-align: center;
 }
 
@@ -114,6 +114,7 @@
   font-style: italic;
   line-height: 1.9;
   overflow-wrap: anywhere;
+  text-align: justify;
 }
 
 .testimonial-body h3 {

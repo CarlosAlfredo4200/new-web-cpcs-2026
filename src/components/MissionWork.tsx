@@ -1,7 +1,10 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import { FiArrowLeft } from "react-icons/fi";
+
 import "../assets/styles/mission-work.css";
 
-// Permite agregar las fotografías después sin errores de importación.
+// Permite agregar las fotografías sin errores de importación.
 const images = import.meta.glob<string>(
   "../assets/images/misiones/*.{png,jpg,jpeg,webp}",
   {
@@ -28,13 +31,19 @@ export default function MissionWork() {
 
     if (!section || !("IntersectionObserver" in window)) return;
 
-    const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const preference = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    );
 
     let observer: IntersectionObserver | undefined;
 
     const configure = () => {
       observer?.disconnect();
-      section.classList.remove("mission--animated", "mission--visible");
+
+      section.classList.remove(
+        "mission--animated",
+        "mission--visible",
+      );
 
       if (preference.matches) return;
 
@@ -44,10 +53,15 @@ export default function MissionWork() {
         ([entry]) => {
           if (!entry) return;
 
-          // Repite la entrada cuando vuelves a llegar a la sección.
-          section.classList.toggle("mission--visible", entry.isIntersecting);
+          section.classList.toggle(
+            "mission--visible",
+            entry.isIntersecting,
+          );
         },
-        { threshold: 0, rootMargin: "0px 0px -60px 0px" },
+        {
+          threshold: 0,
+          rootMargin: "0px 0px -60px 0px",
+        },
       );
 
       observer.observe(section);
@@ -60,7 +74,10 @@ export default function MissionWork() {
       observer?.disconnect();
       preference.removeEventListener("change", configure);
 
-      section.classList.remove("mission--animated", "mission--visible");
+      section.classList.remove(
+        "mission--animated",
+        "mission--visible",
+      );
     };
   }, []);
 
@@ -71,8 +88,26 @@ export default function MissionWork() {
       ref={sectionRef}
       aria-labelledby="mission-title"
     >
-      <div className="mission-container ">
-        {/* Fotografías superpuestas */}
+      {/* Regreso al inicio y cabecera de la sección. */}
+      <div className="mission-top">
+        <Link className="mission-back" to="/">
+          <FiArrowLeft aria-hidden="true" />
+          Volver al inicio del colegio
+        </Link>
+
+        <header className="mission-page-heading">
+          
+
+          <h2 id="mission-title">
+            Proyección y Mirada <span>GLOBAL</span>
+          </h2>
+
+         
+        </header>
+      </div>
+
+      <div className="mission-container">
+        {/* Fotografías superpuestas. */}
         <div className="mission-collage">
           <figure
             className="mission-photo mission-photo--back"
@@ -130,12 +165,17 @@ export default function MissionWork() {
           </div>
         </div>
 
-        {/* Título y texto */}
+        {/* Título y contenido. */}
         <div className="mission-copy">
-          <header className="mission-heading" data-mission-reveal="top">
-            <span className="mission-eyebrow">Servir también es educar</span>
+          <header
+            className="mission-heading"
+            data-mission-reveal="top"
+          >
+           
 
-            <h1 id="mission-heading">Proyección sin fronteras</h1>
+            <h3 className="mission-content-title">
+              Un Compromiso Que Transforma Vidas
+            </h3>
 
             <div className="mission-divider" aria-hidden="true">
               <i />
@@ -145,34 +185,30 @@ export default function MissionWork() {
             </div>
           </header>
 
-          <div className="mission-description" data-mission-reveal="bottom">
+          <div
+            className="mission-description"
+            data-mission-reveal="bottom"
+          >
             <p>
-              En el <strong>Colegio Panamericano Colombosueco</strong>, nuestra
-              fe nos inspira a servir y compartir. Como comunidad educativa,
-              hemos apoyado obras misioneras en la{" "}
-              <strong>aldea Dicko, en África</strong>, y en{" "}
+              En el <strong>Colegio Panamericano Colombosueco</strong>,
+              nuestra fe nos inspira a servir y compartir. Como
+              comunidad educativa, hemos apoyado obras misioneras en
+              la <strong>aldea Dicko, en África</strong>, y en{" "}
               <strong>Nepal, Ecuador y Bolivia</strong>.
             </p>
 
             <p>
-              También hemos extendido nuestra solidaridad a las personas
-              damnificadas por el terremoto en
-              <strong> Urabá</strong>, acompañando a quienes enfrentan momentos
-              de dificultad.
+              También hemos extendido nuestra solidaridad a las
+              personas damnificadas por el terremoto en{" "}
+              <strong>Urabá</strong>.
             </p>
 
             <p className="mission-message">
-              Formamos corazones dispuestos a servir, llevando amor y esperanza
-              más allá de nuestras aulas.
+              Formamos corazones dispuestos a servir, llevando amor
+              y esperanza más allá de nuestras aulas.
             </p>
 
-            <ul className="mission-places" aria-label="Lugares apoyados">
-              <li>África · Dicko</li>
-              <li>Nepal</li>
-              <li>Ecuador</li>
-              <li>Bolivia</li>
-              <li>Urabá · Colombia</li>
-            </ul>
+            
           </div>
         </div>
       </div>
