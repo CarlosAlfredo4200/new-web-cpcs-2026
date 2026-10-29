@@ -25,680 +25,591 @@
   "tarifas": [
     {
       "estrato": 1,
-      "grado": "Once",
-      "matricula": 472152,
-      "pensionMensual": 424936,
-      "otrosCobros": 70000,
-      "totalReportado": 4791516
-    },
-    {
-      "estrato": 2,
-      "grado": "Once",
-      "matricula": 504054,
-      "pensionMensual": 453648,
-      "otrosCobros": 70000,
-      "totalReportado": 5110538
-    },
-    {
-      "estrato": 3,
-      "grado": "Once",
-      "matricula": 535956,
-      "pensionMensual": 482360,
-      "otrosCobros": 70000,
-      "totalReportado": 5429556
-    },
-    {
-      "estrato": 4,
-      "grado": "Once",
-      "matricula": 567858,
-      "pensionMensual": 511072,
-      "otrosCobros": 70000,
-      "totalReportado": 5748579
-    },
-    {
-      "estrato": 5,
-      "grado": "Once",
-      "matricula": 599760,
-      "pensionMensual": 539784,
-      "otrosCobros": 70000,
-      "totalReportado": 6067601
-    },
-    {
-      "estrato": 6,
-      "grado": "Once",
-      "matricula": 631662,
-      "pensionMensual": 568496,
-      "otrosCobros": 70000,
-      "totalReportado": 6386622
-    },
-
-    {
-      "estrato": 1,
-      "grado": "Décimo",
-      "matricula": 494635,
-      "pensionMensual": 445171,
-      "otrosCobros": 70000,
-      "totalReportado": 5016350
-    },
-    {
-      "estrato": 2,
-      "grado": "Décimo",
-      "matricula": 528056,
-      "pensionMensual": 475251,
-      "otrosCobros": 70000,
-      "totalReportado": 5350562
-    },
-    {
-      "estrato": 3,
-      "grado": "Décimo",
-      "matricula": 561477,
-      "pensionMensual": 505330,
-      "otrosCobros": 70000,
-      "totalReportado": 5684774
-    },
-    {
-      "estrato": 4,
-      "grado": "Décimo",
-      "matricula": 594899,
-      "pensionMensual": 535409,
-      "otrosCobros": 70000,
-      "totalReportado": 6018987
-    },
-    {
-      "estrato": 5,
-      "grado": "Décimo",
-      "matricula": 628320,
-      "pensionMensual": 565488,
-      "otrosCobros": 70000,
-      "totalReportado": 6353199
-    },
-    {
-      "estrato": 6,
-      "grado": "Décimo",
-      "matricula": 661741,
-      "pensionMensual": 595567,
-      "otrosCobros": 70000,
-      "totalReportado": 6687414
-    },
-
-    {
-      "estrato": 1,
-      "grado": "Noveno",
-      "matricula": 524685,
-      "pensionMensual": 472217,
-      "otrosCobros": 70000,
-      "totalReportado": 5316851
-    },
-    {
-      "estrato": 2,
-      "grado": "Noveno",
-      "matricula": 560137,
-      "pensionMensual": 504123,
-      "otrosCobros": 70000,
-      "totalReportado": 5671369
-    },
-    {
-      "estrato": 3,
-      "grado": "Noveno",
-      "matricula": 595588,
-      "pensionMensual": 536030,
-      "otrosCobros": 70000,
-      "totalReportado": 6025884
-    },
-    {
-      "estrato": 4,
-      "grado": "Noveno",
-      "matricula": 631040,
-      "pensionMensual": 567936,
-      "otrosCobros": 70000,
-      "totalReportado": 6380402
-    },
-    {
-      "estrato": 5,
-      "grado": "Noveno",
-      "matricula": 666492,
-      "pensionMensual": 599842,
-      "otrosCobros": 70000,
-      "totalReportado": 6734917
-    },
-    {
-      "estrato": 6,
-      "grado": "Noveno",
-      "matricula": 701944,
-      "pensionMensual": 631749,
-      "otrosCobros": 70000,
-      "totalReportado": 7089439
-    },
-
-    {
-      "estrato": 1,
-      "grado": "Octavo",
-      "matricula": 521143,
-      "pensionMensual": 469029,
-      "otrosCobros": 70000,
-      "totalReportado": 5281433
-    },
-    {
-      "estrato": 2,
-      "grado": "Octavo",
-      "matricula": 556356,
-      "pensionMensual": 500720,
-      "otrosCobros": 70000,
-      "totalReportado": 5633558
-    },
-    {
-      "estrato": 3,
-      "grado": "Octavo",
-      "matricula": 591568,
-      "pensionMensual": 532411,
-      "otrosCobros": 70000,
-      "totalReportado": 5985681
-    },
-    {
-      "estrato": 4,
-      "grado": "Octavo",
-      "matricula": 626780,
-      "pensionMensual": 564102,
-      "otrosCobros": 70000,
-      "totalReportado": 6337804
-    },
-    {
-      "estrato": 5,
-      "grado": "Octavo",
-      "matricula": 661993,
-      "pensionMensual": 595794,
-      "otrosCobros": 70000,
-      "totalReportado": 6689928
-    },
-    {
-      "estrato": 6,
-      "grado": "Octavo",
-      "matricula": 697205,
-      "pensionMensual": 627485,
-      "otrosCobros": 70000,
-      "totalReportado": 7042054
-    },
-
-    {
-      "estrato": 1,
-      "grado": "Séptimo",
-      "matricula": 550680,
-      "pensionMensual": 495612,
-      "otrosCobros": 70000,
-      "totalReportado": 5576797
-    },
-    {
-      "estrato": 2,
-      "grado": "Séptimo",
-      "matricula": 587888,
-      "pensionMensual": 529099,
-      "otrosCobros": 70000,
-      "totalReportado": 5948880
-    },
-    {
-      "estrato": 3,
-      "grado": "Séptimo",
-      "matricula": 625096,
-      "pensionMensual": 562586,
-      "otrosCobros": 70000,
-      "totalReportado": 6320959
-    },
-    {
-      "estrato": 4,
-      "grado": "Séptimo",
-      "matricula": 662304,
-      "pensionMensual": 596074,
-      "otrosCobros": 70000,
-      "totalReportado": 6693040
-    },
-    {
-      "estrato": 5,
-      "grado": "Séptimo",
-      "matricula": 699512,
-      "pensionMensual": 629561,
-      "otrosCobros": 70000,
-      "totalReportado": 7065120
-    },
-    {
-      "estrato": 6,
-      "grado": "Séptimo",
-      "matricula": 736720,
-      "pensionMensual": 663048,
-      "otrosCobros": 70000,
-      "totalReportado": 7437204
-    },
-
-    {
-      "estrato": 1,
-      "grado": "Sexto",
-      "matricula": 571137,
-      "pensionMensual": 514023,
-      "otrosCobros": 70000,
-      "totalReportado": 5781368
-    },
-    {
-      "estrato": 2,
-      "grado": "Sexto",
-      "matricula": 609727,
-      "pensionMensual": 548754,
-      "otrosCobros": 70000,
-      "totalReportado": 6167272
-    },
-    {
-      "estrato": 3,
-      "grado": "Sexto",
-      "matricula": 648317,
-      "pensionMensual": 583486,
-      "otrosCobros": 70000,
-      "totalReportado": 6553174
-    },
-    {
-      "estrato": 4,
-      "grado": "Sexto",
-      "matricula": 686908,
-      "pensionMensual": 618217,
-      "otrosCobros": 70000,
-      "totalReportado": 6939079
-    },
-    {
-      "estrato": 5,
-      "grado": "Sexto",
-      "matricula": 725498,
-      "pensionMensual": 652948,
-      "otrosCobros": 70000,
-      "totalReportado": 7324980
-    },
-    {
-      "estrato": 6,
-      "grado": "Sexto",
-      "matricula": 764089,
-      "pensionMensual": 687680,
-      "otrosCobros": 70000,
-      "totalReportado": 7710887
-    },
-
-    {
-      "estrato": 1,
-      "grado": "Quinto",
-      "matricula": 578659,
-      "pensionMensual": 520793,
-      "otrosCobros": 70000,
-      "totalReportado": 5856593
-    },
-    {
-      "estrato": 2,
-      "grado": "Quinto",
-      "matricula": 617758,
-      "pensionMensual": 555982,
-      "otrosCobros": 70000,
-      "totalReportado": 6247580
-    },
-    {
-      "estrato": 3,
-      "grado": "Quinto",
-      "matricula": 656857,
-      "pensionMensual": 591171,
-      "otrosCobros": 70000,
-      "totalReportado": 6638566
-    },
-    {
-      "estrato": 4,
-      "grado": "Quinto",
-      "matricula": 695955,
-      "pensionMensual": 626360,
-      "otrosCobros": 70000,
-      "totalReportado": 7029553
-    },
-    {
-      "estrato": 5,
-      "grado": "Quinto",
-      "matricula": 735054,
-      "pensionMensual": 661548,
-      "otrosCobros": 70000,
-      "totalReportado": 7420539
-    },
-    {
-      "estrato": 6,
-      "grado": "Quinto",
-      "matricula": 774153,
-      "pensionMensual": 696737,
-      "otrosCobros": 70000,
-      "totalReportado": 7811527
-    },
-
-    {
-      "estrato": 1,
-      "grado": "Cuarto",
-      "matricula": 599365,
-      "pensionMensual": 539428,
-      "otrosCobros": 70000,
-      "totalReportado": 6063648
-    },
-    {
-      "estrato": 2,
-      "grado": "Cuarto",
-      "matricula": 639862,
-      "pensionMensual": 575876,
-      "otrosCobros": 70000,
-      "totalReportado": 6468623
-    },
-    {
-      "estrato": 3,
-      "grado": "Cuarto",
-      "matricula": 680360,
-      "pensionMensual": 612324,
-      "otrosCobros": 70000,
-      "totalReportado": 6873598
-    },
-    {
-      "estrato": 4,
-      "grado": "Cuarto",
-      "matricula": 720858,
-      "pensionMensual": 648772,
-      "otrosCobros": 70000,
-      "totalReportado": 7278576
-    },
-    {
-      "estrato": 5,
-      "grado": "Cuarto",
-      "matricula": 761355,
-      "pensionMensual": 685220,
-      "otrosCobros": 70000,
-      "totalReportado": 7683552
-    },
-    {
-      "estrato": 6,
-      "grado": "Cuarto",
-      "matricula": 801853,
-      "pensionMensual": 721668,
-      "otrosCobros": 70000,
-      "totalReportado": 8088531
-    },
-
-    {
-      "estrato": 1,
-      "grado": "Tercero",
-      "matricula": 627906,
-      "pensionMensual": 565115,
-      "otrosCobros": 70000,
-      "totalReportado": 6349059
-    },
-    {
-      "estrato": 2,
-      "grado": "Tercero",
-      "matricula": 670332,
-      "pensionMensual": 603299,
-      "otrosCobros": 70000,
-      "totalReportado": 6773322
-    },
-    {
-      "estrato": 3,
-      "grado": "Tercero",
-      "matricula": 712758,
-      "pensionMensual": 641482,
-      "otrosCobros": 70000,
-      "totalReportado": 7197581
-    },
-    {
-      "estrato": 4,
-      "grado": "Tercero",
-      "matricula": 755184,
-      "pensionMensual": 679666,
-      "otrosCobros": 70000,
-      "totalReportado": 7621842
-    },
-    {
-      "estrato": 5,
-      "grado": "Tercero",
-      "matricula": 797610,
-      "pensionMensual": 717849,
-      "otrosCobros": 70000,
-      "totalReportado": 8046101
-    },
-    {
-      "estrato": 6,
-      "grado": "Tercero",
-      "matricula": 840037,
-      "pensionMensual": 756033,
-      "otrosCobros": 70000,
-      "totalReportado": 8470366
-    },
-
-    {
-      "estrato": 1,
-      "grado": "Segundo",
-      "matricula": 654999,
-      "pensionMensual": 589499,
-      "otrosCobros": 70000,
-      "totalReportado": 6619990
-    },
-    {
-      "estrato": 2,
-      "grado": "Segundo",
-      "matricula": 699256,
-      "pensionMensual": 629330,
-      "otrosCobros": 70000,
-      "totalReportado": 7062559
-    },
-    {
-      "estrato": 3,
-      "grado": "Segundo",
-      "matricula": 743512,
-      "pensionMensual": 669161,
-      "otrosCobros": 70000,
-      "totalReportado": 7505124
-    },
-    {
-      "estrato": 4,
-      "grado": "Segundo",
-      "matricula": 787769,
-      "pensionMensual": 708992,
-      "otrosCobros": 70000,
-      "totalReportado": 7947692
-    },
-    {
-      "estrato": 5,
-      "grado": "Segundo",
-      "matricula": 832026,
-      "pensionMensual": 748823,
-      "otrosCobros": 70000,
-      "totalReportado": 8390258
-    },
-    {
-      "estrato": 6,
-      "grado": "Segundo",
-      "matricula": 876283,
-      "pensionMensual": 788655,
-      "otrosCobros": 70000,
-      "totalReportado": 8832828
-    },
-
-    {
-      "estrato": 1,
-      "grado": "Primero",
-      "matricula": 636045,
-      "pensionMensual": 572440,
-      "otrosCobros": 70000,
-      "totalReportado": 6430449
-    },
-    {
-      "estrato": 2,
-      "grado": "Primero",
-      "matricula": 679021,
-      "pensionMensual": 611119,
-      "otrosCobros": 70000,
-      "totalReportado": 6860211
-    },
-    {
-      "estrato": 3,
-      "grado": "Primero",
-      "matricula": 721997,
-      "pensionMensual": 649797,
-      "otrosCobros": 70000,
-      "totalReportado": 7289970
-    },
-    {
-      "estrato": 4,
-      "grado": "Primero",
-      "matricula": 764973,
-      "pensionMensual": 688476,
-      "otrosCobros": 70000,
-      "totalReportado": 7719730
-    },
-    {
-      "estrato": 5,
-      "grado": "Primero",
-      "matricula": 807949,
-      "pensionMensual": 727154,
-      "otrosCobros": 70000,
-      "totalReportado": 8149489
-    },
-    {
-      "estrato": 6,
-      "grado": "Primero",
-      "matricula": 850925,
-      "pensionMensual": 765833,
-      "otrosCobros": 70000,
-      "totalReportado": 8579252
-    },
-
-    {
-      "estrato": 1,
-      "grado": "Transición",
-      "matricula": 664813,
-      "pensionMensual": 598332,
-      "otrosCobros": 70000,
-      "totalReportado": 6648131
-    },
-    {
-      "estrato": 2,
-      "grado": "Transición",
-      "matricula": 709733,
-      "pensionMensual": 638760,
-      "otrosCobros": 70000,
-      "totalReportado": 7097332
-    },
-    {
-      "estrato": 3,
-      "grado": "Transición",
-      "matricula": 754653,
-      "pensionMensual": 679188,
-      "otrosCobros": 70000,
-      "totalReportado": 7546528
-    },
-    {
-      "estrato": 4,
-      "grado": "Transición",
-      "matricula": 799573,
-      "pensionMensual": 719615,
-      "otrosCobros": 70000,
-      "totalReportado": 7995727
-    },
-    {
-      "estrato": 5,
-      "grado": "Transición",
-      "matricula": 844492,
-      "pensionMensual": 760043,
-      "otrosCobros": 70000,
-      "totalReportado": 8444924
-    },
-    {
-      "estrato": 6,
-      "grado": "Transición",
-      "matricula": 889413,
-      "pensionMensual": 800471,
-      "otrosCobros": 70000,
-      "totalReportado": 8894126
-    },
-
-    {
-      "estrato": 1,
-      "grado": "Jardín",
-      "matricula": 686667,
-      "pensionMensual": 618000,
-      "otrosCobros": 70000,
-      "totalReportado": 6866671
-    },
-    {
-      "estrato": 2,
-      "grado": "Jardín",
-      "matricula": 733064,
-      "pensionMensual": 659750,
-      "otrosCobros": 70000,
-      "totalReportado": 7330637
-    },
-    {
-      "estrato": 3,
-      "grado": "Jardín",
-      "matricula": 779460,
-      "pensionMensual": 701514,
-      "otrosCobros": 70000,
-      "totalReportado": 7794600
-    },
-    {
-      "estrato": 4,
-      "grado": "Jardín",
-      "matricula": 825856,
-      "pensionMensual": 743271,
-      "otrosCobros": 70000,
-      "totalReportado": 8258565
-    },
-    {
-      "estrato": 5,
-      "grado": "Jardín",
-      "matricula": 872253,
-      "pensionMensual": 785027,
-      "otrosCobros": 70000,
-      "totalReportado": 8722528
-    },
-    {
-      "estrato": 6,
-      "grado": "Jardín",
-      "matricula": 918650,
-      "pensionMensual": 826785,
-      "otrosCobros": 70000,
-      "totalReportado": 9186496
-    },
-
-    {
-      "estrato": 1,
       "grado": "Prejardín",
-      "matricula": 812258,
-      "pensionMensual": 731032,
-      "otrosCobros": 70000,
-      "totalReportado": 8122583
+      "matricula": 934097,
+      "pensionMensual": 840687,
+      "totalReportado": 9340970
     },
     {
       "estrato": 2,
       "grado": "Prejardín",
-      "matricula": 867141,
-      "pensionMensual": 780427,
-      "otrosCobros": 70000,
-      "totalReportado": 8671409
+      "matricula": 997212,
+      "pensionMensual": 897491,
+      "totalReportado": 9972120
     },
     {
       "estrato": 3,
       "grado": "Prejardín",
-      "matricula": 922023,
-      "pensionMensual": 829821,
-      "otrosCobros": 70000,
-      "totalReportado": 9220230
+      "matricula": 1060326,
+      "pensionMensual": 954294,
+      "totalReportado": 10603265
     },
     {
       "estrato": 4,
       "grado": "Prejardín",
-      "matricula": 976905,
-      "pensionMensual": 879215,
-      "otrosCobros": 70000,
-      "totalReportado": 9769054
+      "matricula": 1123441,
+      "pensionMensual": 1011097,
+      "totalReportado": 11234412
     },
     {
       "estrato": 5,
       "grado": "Prejardín",
-      "matricula": 1031788,
-      "pensionMensual": 928609,
-      "otrosCobros": 70000,
-      "totalReportado": 10317875
+      "matricula": 1186556,
+      "pensionMensual": 1067900,
+      "totalReportado": 11865557
+    },
+    {
+      "estrato": 6,
+      "grado": "Prejardín",
+      "matricula": 1249671,
+      "pensionMensual": 1124704,
+      "totalReportado": 12496709
+    },
+    {
+      "estrato": 1,
+      "grado": "Jardín",
+      "matricula": 876183,
+      "pensionMensual": 788565,
+      "totalReportado": 8761830
+    },
+    {
+      "estrato": 2,
+      "grado": "Jardín",
+      "matricula": 935385,
+      "pensionMensual": 841846,
+      "totalReportado": 9353848
+    },
+    {
+      "estrato": 3,
+      "grado": "Jardín",
+      "matricula": 994586,
+      "pensionMensual": 895128,
+      "totalReportado": 9945862
+    },
+    {
+      "estrato": 4,
+      "grado": "Jardín",
+      "matricula": 1053788,
+      "pensionMensual": 948409,
+      "totalReportado": 10537878
+    },
+    {
+      "estrato": 5,
+      "grado": "Jardín",
+      "matricula": 1112989,
+      "pensionMensual": 1001690,
+      "totalReportado": 11129892
+    },
+    {
+      "estrato": 6,
+      "grado": "Jardín",
+      "matricula": 1172191,
+      "pensionMensual": 1054972,
+      "totalReportado": 11721913
+    },
+    {
+      "estrato": 1,
+      "grado": "Transición",
+      "matricula": 740708,
+      "pensionMensual": 666637,
+      "totalReportado": 7407078
+    },
+    {
+      "estrato": 2,
+      "grado": "Transición",
+      "matricula": 790756,
+      "pensionMensual": 711680,
+      "totalReportado": 7907558
+    },
+    {
+      "estrato": 3,
+      "grado": "Transición",
+      "matricula": 840804,
+      "pensionMensual": 756723,
+      "totalReportado": 8408035
+    },
+    {
+      "estrato": 4,
+      "grado": "Transición",
+      "matricula": 890851,
+      "pensionMensual": 801766,
+      "totalReportado": 8908514
+    },
+    {
+      "estrato": 5,
+      "grado": "Transición",
+      "matricula": 940899,
+      "pensionMensual": 846809,
+      "totalReportado": 9408991
+    },
+    {
+      "estrato": 6,
+      "grado": "Transición",
+      "matricula": 990947,
+      "pensionMensual": 891853,
+      "totalReportado": 9909473
+    },
+    {
+      "estrato": 1,
+      "grado": "Primero",
+      "matricula": 717134,
+      "pensionMensual": 645421,
+      "totalReportado": 7171339
+    },
+    {
+      "estrato": 2,
+      "grado": "Primero",
+      "matricula": 765589,
+      "pensionMensual": 689030,
+      "totalReportado": 7655892
+    },
+    {
+      "estrato": 3,
+      "grado": "Primero",
+      "matricula": 814044,
+      "pensionMensual": 732640,
+      "totalReportado": 8140440
+    },
+    {
+      "estrato": 4,
+      "grado": "Primero",
+      "matricula": 862499,
+      "pensionMensual": 776249,
+      "totalReportado": 8624991
+    },
+    {
+      "estrato": 5,
+      "grado": "Primero",
+      "matricula": 910954,
+      "pensionMensual": 819859,
+      "totalReportado": 9109539
+    },
+    {
+      "estrato": 6,
+      "grado": "Primero",
+      "matricula": 959409,
+      "pensionMensual": 863468,
+      "totalReportado": 9594093
+    },
+    {
+      "estrato": 1,
+      "grado": "Segundo",
+      "matricula": 686102,
+      "pensionMensual": 617491,
+      "totalReportado": 6861016
+    },
+    {
+      "estrato": 2,
+      "grado": "Segundo",
+      "matricula": 732460,
+      "pensionMensual": 659214,
+      "totalReportado": 7324600
+    },
+    {
+      "estrato": 3,
+      "grado": "Segundo",
+      "matricula": 778818,
+      "pensionMensual": 700936,
+      "totalReportado": 7788181
+    },
+    {
+      "estrato": 4,
+      "grado": "Segundo",
+      "matricula": 825176,
+      "pensionMensual": 742659,
+      "totalReportado": 8251764
+    },
+    {
+      "estrato": 5,
+      "grado": "Segundo",
+      "matricula": 871534,
+      "pensionMensual": 784381,
+      "totalReportado": 8715345
+    },
+    {
+      "estrato": 6,
+      "grado": "Segundo",
+      "matricula": 917893,
+      "pensionMensual": 826104,
+      "totalReportado": 9178931
+    },
+    {
+      "estrato": 1,
+      "grado": "Tercero",
+      "matricula": 706547,
+      "pensionMensual": 635893,
+      "totalReportado": 7065474
+    },
+    {
+      "estrato": 2,
+      "grado": "Tercero",
+      "matricula": 754287,
+      "pensionMensual": 678859,
+      "totalReportado": 7542873
+    },
+    {
+      "estrato": 3,
+      "grado": "Tercero",
+      "matricula": 802027,
+      "pensionMensual": 721824,
+      "totalReportado": 8020268
+    },
+    {
+      "estrato": 4,
+      "grado": "Tercero",
+      "matricula": 849767,
+      "pensionMensual": 764790,
+      "totalReportado": 8497667
+    },
+    {
+      "estrato": 5,
+      "grado": "Tercero",
+      "matricula": 897506,
+      "pensionMensual": 807756,
+      "totalReportado": 8975062
+    },
+    {
+      "estrato": 6,
+      "grado": "Tercero",
+      "matricula": 945246,
+      "pensionMensual": 850722,
+      "totalReportado": 9452463
+    },
+    {
+      "estrato": 1,
+      "grado": "Cuarto",
+      "matricula": 677322,
+      "pensionMensual": 609590,
+      "totalReportado": 6773221
+    },
+    {
+      "estrato": 2,
+      "grado": "Cuarto",
+      "matricula": 723087,
+      "pensionMensual": 650779,
+      "totalReportado": 7230873
+    },
+    {
+      "estrato": 3,
+      "grado": "Cuarto",
+      "matricula": 768852,
+      "pensionMensual": 691967,
+      "totalReportado": 7688521
+    },
+    {
+      "estrato": 4,
+      "grado": "Cuarto",
+      "matricula": 814617,
+      "pensionMensual": 733156,
+      "totalReportado": 8146172
+    },
+    {
+      "estrato": 5,
+      "grado": "Cuarto",
+      "matricula": 860382,
+      "pensionMensual": 774344,
+      "totalReportado": 8603820
+    },
+    {
+      "estrato": 6,
+      "grado": "Cuarto",
+      "matricula": 906147,
+      "pensionMensual": 815533,
+      "totalReportado": 9061475
+    },
+    {
+      "estrato": 1,
+      "grado": "Quinto",
+      "matricula": 646535,
+      "pensionMensual": 581881,
+      "totalReportado": 6465348
+    },
+    {
+      "estrato": 2,
+      "grado": "Quinto",
+      "matricula": 690220,
+      "pensionMensual": 621198,
+      "totalReportado": 6902195
+    },
+    {
+      "estrato": 3,
+      "grado": "Quinto",
+      "matricula": 733904,
+      "pensionMensual": 660514,
+      "totalReportado": 7339041
+    },
+    {
+      "estrato": 4,
+      "grado": "Quinto",
+      "matricula": 777589,
+      "pensionMensual": 699830,
+      "totalReportado": 7775891
+    },
+    {
+      "estrato": 5,
+      "grado": "Quinto",
+      "matricula": 821274,
+      "pensionMensual": 739146,
+      "totalReportado": 8212738
+    },
+    {
+      "estrato": 6,
+      "grado": "Quinto",
+      "matricula": 864959,
+      "pensionMensual": 778463,
+      "totalReportado": 8649589
+    },
+    {
+      "estrato": 1,
+      "grado": "Sexto",
+      "matricula": 624200,
+      "pensionMensual": 561780,
+      "totalReportado": 6241998
+    },
+    {
+      "estrato": 2,
+      "grado": "Sexto",
+      "matricula": 666376,
+      "pensionMensual": 599738,
+      "totalReportado": 6663756
+    },
+    {
+      "estrato": 3,
+      "grado": "Sexto",
+      "matricula": 708551,
+      "pensionMensual": 637696,
+      "totalReportado": 7085511
+    },
+    {
+      "estrato": 4,
+      "grado": "Sexto",
+      "matricula": 750727,
+      "pensionMensual": 675654,
+      "totalReportado": 7507270
+    },
+    {
+      "estrato": 5,
+      "grado": "Sexto",
+      "matricula": 792903,
+      "pensionMensual": 713612,
+      "totalReportado": 7929026
+    },
+    {
+      "estrato": 6,
+      "grado": "Sexto",
+      "matricula": 835079,
+      "pensionMensual": 751571,
+      "totalReportado": 8350785
+    },
+    {
+      "estrato": 1,
+      "grado": "Séptimo",
+      "matricula": 616085,
+      "pensionMensual": 554477,
+      "totalReportado": 6160852
+    },
+    {
+      "estrato": 2,
+      "grado": "Séptimo",
+      "matricula": 657713,
+      "pensionMensual": 591941,
+      "totalReportado": 6577127
+    },
+    {
+      "estrato": 3,
+      "grado": "Séptimo",
+      "matricula": 699340,
+      "pensionMensual": 629406,
+      "totalReportado": 6993401
+    },
+    {
+      "estrato": 4,
+      "grado": "Séptimo",
+      "matricula": 740968,
+      "pensionMensual": 666871,
+      "totalReportado": 7409676
+    },
+    {
+      "estrato": 5,
+      "grado": "Séptimo",
+      "matricula": 782595,
+      "pensionMensual": 704335,
+      "totalReportado": 7825947
+    },
+    {
+      "estrato": 6,
+      "grado": "Séptimo",
+      "matricula": 824222,
+      "pensionMensual": 741800,
+      "totalReportado": 8242224
+    },
+    {
+      "estrato": 1,
+      "grado": "Octavo",
+      "matricula": 594018,
+      "pensionMensual": 534616,
+      "totalReportado": 5940182
+    },
+    {
+      "estrato": 2,
+      "grado": "Octavo",
+      "matricula": 634155,
+      "pensionMensual": 570739,
+      "totalReportado": 6341547
+    },
+    {
+      "estrato": 3,
+      "grado": "Octavo",
+      "matricula": 674291,
+      "pensionMensual": 606862,
+      "totalReportado": 6742910
+    },
+    {
+      "estrato": 4,
+      "grado": "Octavo",
+      "matricula": 714427,
+      "pensionMensual": 642985,
+      "totalReportado": 7144274
+    },
+    {
+      "estrato": 5,
+      "grado": "Octavo",
+      "matricula": 754564,
+      "pensionMensual": 679107,
+      "totalReportado": 7545636
+    },
+    {
+      "estrato": 6,
+      "grado": "Octavo",
+      "matricula": 794700,
+      "pensionMensual": 715230,
+      "totalReportado": 7947003
+    },
+    {
+      "estrato": 1,
+      "grado": "Noveno",
+      "matricula": 562157,
+      "pensionMensual": 505942,
+      "totalReportado": 5621574
+    },
+    {
+      "estrato": 2,
+      "grado": "Noveno",
+      "matricula": 600141,
+      "pensionMensual": 540127,
+      "totalReportado": 6001409
+    },
+    {
+      "estrato": 3,
+      "grado": "Noveno",
+      "matricula": 638125,
+      "pensionMensual": 574312,
+      "totalReportado": 6381245
+    },
+    {
+      "estrato": 4,
+      "grado": "Noveno",
+      "matricula": 676108,
+      "pensionMensual": 608497,
+      "totalReportado": 6761081
+    },
+    {
+      "estrato": 5,
+      "grado": "Noveno",
+      "matricula": 714092,
+      "pensionMensual": 642682,
+      "totalReportado": 7140917
+    },
+    {
+      "estrato": 6,
+      "grado": "Noveno",
+      "matricula": 752076,
+      "pensionMensual": 676868,
+      "totalReportado": 7520756
+    },
+    {
+      "estrato": 1,
+      "grado": "Décimo",
+      "matricula": 565978,
+      "pensionMensual": 509380,
+      "totalReportado": 5659778
+    },
+    {
+      "estrato": 2,
+      "grado": "Décimo",
+      "matricula": 604220,
+      "pensionMensual": 543798,
+      "totalReportado": 6042196
+    },
+    {
+      "estrato": 3,
+      "grado": "Décimo",
+      "matricula": 642461,
+      "pensionMensual": 578215,
+      "totalReportado": 6424613
+    },
+    {
+      "estrato": 4,
+      "grado": "Décimo",
+      "matricula": 680703,
+      "pensionMensual": 612633,
+      "totalReportado": 6807031
+    },
+    {
+      "estrato": 5,
+      "grado": "Décimo",
+      "matricula": 718945,
+      "pensionMensual": 647050,
+      "totalReportado": 7189445
+    },
+    {
+      "estrato": 6,
+      "grado": "Décimo",
+      "matricula": 757187,
+      "pensionMensual": 681468,
+      "totalReportado": 7571868
+    },
+    {
+      "estrato": 1,
+      "grado": "Once",
+      "matricula": 533563,
+      "pensionMensual": 480206,
+      "totalReportado": 5335627
+    },
+    {
+      "estrato": 2,
+      "grado": "Once",
+      "matricula": 569614,
+      "pensionMensual": 512653,
+      "totalReportado": 5696142
+    },
+    {
+      "estrato": 3,
+      "grado": "Once",
+      "matricula": 605666,
+      "pensionMensual": 545099,
+      "totalReportado": 6056657
+    },
+    {
+      "estrato": 4,
+      "grado": "Once",
+      "matricula": 641717,
+      "pensionMensual": 577545,
+      "totalReportado": 6417172
+    },
+    {
+      "estrato": 5,
+      "grado": "Once",
+      "matricula": 677769,
+      "pensionMensual": 609992,
+      "totalReportado": 6777687
+    },
+    {
+      "estrato": 6,
+      "grado": "Once",
+      "matricula": 713821,
+      "pensionMensual": 642438,
+      "totalReportado": 7138205
     }
   ]
 }

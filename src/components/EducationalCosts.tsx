@@ -124,10 +124,10 @@ export default function EducationalCosts() {
                     <th scope="col">Estrato</th>
                     <th scope="col">Matrícula</th>
                     <th scope="col">
-                      Pensión mensual <small>10 mensualidades</small>
+                      Pensión Mensual <small>10 mensualidades</small>
                     </th>
-                    <th scope="col">Otros cobros</th>
-                    <th scope="col">Total reportado</th>
+                  
+                    <th scope="col">Total Año</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -141,7 +141,7 @@ export default function EducationalCosts() {
                       </td>
                       <td>{currency.format(row.matricula)}</td>
                       <td>{currency.format(row.pensionMensual)}</td>
-                      <td>{currency.format(row.otrosCobros)}</td>
+                      
                       <td className="costs-total">
                         {currency.format(row.totalReportado)}
                       </td>
@@ -162,21 +162,18 @@ export default function EducationalCosts() {
         </section>
         <aside className="costs-contact">
           <div>
-            <h2>Conoce Nuestros Beneficios Económicos</h2>
-            <p>
-              Consulta con Tesorería los beneficios sobre
-              pensiones, otros beneficios y sus condiciones.
-            </p>
+            <h2>Si deseas Conocer Mas Información</h2>
+             
           </div>
 
           <a
-            href={`https://wa.me/573007272959?text=${encodeURIComponent(
-              "Hola, quisiera información sobre los costos educativos y los beneficios económicos del colegio.",
+            href={`https://wa.me/573185481991?text=${encodeURIComponent(
+              "Hola, quisiera mas información.",
             )}`}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Consultar con Tesorería por WhatsApp ↗
+            Consultar con admisiones por WhatsApp ↗
           </a>
         </aside>
       </div>
